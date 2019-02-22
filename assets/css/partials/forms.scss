@@ -1,0 +1,38 @@
+input,
+select,
+textarea {
+  padding: .53rem;
+  display: block;
+  border: .06rem solid highlight($border-default, 2%);
+  width: 100%;
+  color: color($text-default, 20%);
+  background-color: highlight(map-get($default, 'background'), 2%);
+}
+
+select {
+  padding: .56rem 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: map-get($primary, 'border');;
+}
+
+[type=checkbox],
+[type=radio] {
+  width: 1.2rem;
+  height: 1.2rem;
+  position: relative;
+  top: 0.33rem;
+  vert-align: middle;
+}
+
+[type=checkbox] {
+  margin-top: -.06rem;
+}
+
+label {
+  font-weight: 500;
+  //margin-top: 1.06rem;
+}

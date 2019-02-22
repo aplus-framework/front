@@ -1,0 +1,156 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+
+	&:before,
+	&:after {
+		box-sizing: inherit;
+	}
+}
+
+@import "normalize";
+
+html,
+body {
+	font-family: $font-family-sans;
+	font-size: 1rem;
+	color: $text-default;
+	line-height: 1.5;
+	background-color: $background-default;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+@import "typography";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "dropdowns";
+@import "modals";
+@import "layout";
+
+@media (max-width: 80.33rem) {
+	.auto {
+		max-width: 95%;
+	}
+}
+
+@media (max-width: 40rem) {
+	.modal-content {
+		margin: 0 .66rem;
+		width: auto !important;
+	}
+
+	.modal {
+		padding-top: 2rem;
+	}
+
+	.dropdown-hover.mobile .dropdown-content,
+	.dropdown-click.mobile .dropdown-content {
+		position: relative;
+	}
+
+	.hide-small {
+		display: none !important;
+	}
+
+	.bar-items.mobile *,
+	.mobile {
+		display: block;
+		width: 100% !important;
+	}
+
+	.bar-item.mobile,
+	.dropdown-hover.mobile,
+	.dropdown-click.mobile {
+		text-align: center;
+	}
+
+	.dropdown-hover.mobile {
+		width: 100%;
+
+		.btn-shadow,
+		.btn,
+		button {
+			width: 100%;
+		}
+	}
+
+	.dropdown-click.mobile {
+		width: 100%;
+
+		.btn-shadow,
+		.btn,
+		button {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 51.2rem) {
+	.modal-content {
+		width: 33.33rem;
+	}
+
+	.modal {
+		padding-top: 3.33rem;
+	}
+}
+
+@media (min-width: 66.2rem) {
+	.modal-content {
+		width: 60rem;
+	}
+
+	.hide-large {
+		display: none !important;
+	}
+
+	.sidebar.collapse {
+		display: block !important;
+	}
+}
+
+@media (max-width: 66.13rem) and (min-width: 40.06rem) {
+	.hide-medium {
+		display: none !important;
+	}
+}
+
+@media (max-width: 66.13rem) {
+	.sidebar.collapse {
+		display: none;
+	}
+
+	.main {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.auto {
+		max-width: 100%;
+	}
+}
+
+
+.overlay {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 2;
+}
+
+@import "displays";
+@import "animations";
+@import "colors";

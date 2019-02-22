@@ -1,0 +1,36 @@
+@function em($pixels, $context: $font-size) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1em;
+}
+
+@function highlight($color, $amount: 20%, $threshold: 50%) {
+  @if lightness($color) > $threshold {
+    @return darken($color, $amount);
+  }
+  @return lighten($color, $amount);
+}
+
+@function color($color, $amount: 80%) {
+  @if lightness($color) > 50% {
+    @return darken(#fff, $amount);
+  }
+  @return lighten(#000, $amount);
+}
+
+@function borderColor($color, $amount: 20%) {
+  @if lightness($color) > 50% {
+    @return darken($color, $amount);
+  }
+  @return lighten($color, $amount);
+}
+
+@mixin colors($foreground, $background, $border) {
+  color: $foreground;
+  background-color: $background;
+  border-color: $border;
+}

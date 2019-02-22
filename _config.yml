@@ -1,0 +1,14 @@
+---
+url: https://the-framework.gitlab.io/front
+title: Front
+timezone: UTC
+
+markdown: kramdown
+highlighter: false
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

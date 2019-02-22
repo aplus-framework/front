@@ -1,0 +1,77 @@
+// Default
+.default {
+	@include colors($default...);
+}
+
+.text-default {
+	color: map-get($default, 'background');
+}
+
+.border-default {
+	border-color: map-get($default, 'border');
+}
+
+// Primary
+.primary {
+	@include colors($primary...);
+}
+
+.text-primary {
+	color: map-get($primary, 'background');
+}
+
+.border-primary {
+	border-color: map-get($primary, 'border');
+}
+
+// Info
+.info {
+	@include colors($info...);
+}
+
+.text-info {
+	color: map-get($info, 'background');
+}
+
+.border-info {
+	border-color: map-get($info, 'border');
+}
+
+// Success
+.success {
+	@include colors($success...);
+}
+
+.text-success {
+	color: map-get($success, 'background');
+}
+
+.border-success {
+	border-color: map-get($success, 'border');;
+}
+
+// Warning
+.warning {
+	@include colors($warning...);
+}
+
+.text-warning {
+	color: map-get($warning, 'background');
+}
+
+.border-warning {
+	border-color: map-get($warning, 'border');
+}
+
+// Error
+.error {
+	@include colors($error...);
+}
+
+.text-error {
+	color: map-get($error, 'background');
+}
+
+.border-error {
+	border-color: map-get($error, 'border');
+}

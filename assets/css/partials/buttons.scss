@@ -1,0 +1,73 @@
+button,
+.btn {
+	border: .06rem $border-default solid;
+	border-radius: .26rem;
+	display: inline-block;
+	padding: .53rem 1.06rem;
+	vertical-align: middle;
+	overflow: hidden;
+	text-decoration: none;
+	color: $text-default;
+	background-color: highlight(map-get($default, 'background'), 2%);
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+button:disabled,
+.btn:disabled,
+.disabled {
+	cursor: not-allowed;
+	opacity: .3;
+}
+
+.disabled *,
+:disabled * {
+	pointer-events: none;
+}
+
+button.shadow,
+.btn.shadow {
+	&.disabled:hover,
+	&:disabled:hover {
+		box-shadow: none;
+	}
+}
+
+button:hover,
+.btn:hover {
+	color: $text-default;
+	background-color: highlight(map-get($default, 'background'), 10%);
+}
+
+button:focus,
+button.active,
+.btn:focus,
+.btn.active {
+	background-color: highlight(map-get($default, 'background'), 15%);
+}
+
+button:active,
+.btn:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+.badge,
+.tag {
+	background-color: #000;
+	color: #fff;
+	display: inline-block;
+	padding-left: .53rem;
+	padding-right: .53rem;
+	text-align: center;
+}
+
+.badge {
+	border-radius: 50%;
+}

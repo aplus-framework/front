@@ -1,0 +1,30 @@
+---
+image: ruby:2.5
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - bundle install --path vendor
+
+test:build:
+  stage: test
+  script:
+    - bundle exec jekyll build -d build/
+  artifacts:
+    paths:
+      - build
+
+pages:
+  stage: deploy
+  dependencies:
+    - test:build
+  script:
+    - mkdir public/
+    - mv build/* public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

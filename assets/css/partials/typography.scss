@@ -1,0 +1,137 @@
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.33rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.06rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  //color: $font-color-h;
+  font-family: $font-family-h;
+  font-weight: 400;
+  margin: .6rem 0;
+}
+
+a {
+  color: map-get($primary, 'background');
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: .8rem;
+}
+
+.serif {
+  font-family: $font-family-serif;
+}
+
+.text-tiny {
+  font-size: .66rem !important;
+}
+
+.text-small {
+  font-size: .8rem !important;
+}
+
+.text-medium {
+  font-size: 1rem !important;
+}
+
+.text-large {
+  font-size: 1.2rem !important;
+}
+
+.text-large-x {
+  font-size: 1.6rem !important;
+}
+
+.text-large-xx {
+  font-size: 2.4rem !important;
+}
+
+.text-large-xxx {
+  font-size: 3.2rem !important;
+}
+
+.text-jumbo {
+  font-size: 4.26rem !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-center, .center {
+  text-align: center !important;
+}
+
+.text-wide {
+  letter-spacing: .26rem;
+}
+
+pre,
+code {
+  font-family: $font-family-mono;
+  font-size: 1.06rem;
+}
+
+pre {
+  width: auto;
+  background-color: highlight(map-get($default, 'background'), 5%);
+  padding: .53rem .8rem;
+  border: .06rem solid $border-default;
+  border-left: .26rem solid map-get($primary, 'border');
+  word-wrap: break-word;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+}
+
+.section,
+section + section,
+pre {
+  margin-top: 1.06rem !important;
+  margin-bottom: 1.06rem !important;
+}
+
+:not(pre) > code {
+  color: highlight(map-get($primary, 'background'), 8%);
+  background-color: highlight(map-get($primary, 'background'), 4%);
+  padding-left: .26rem;
+  padding-right: .26rem;
+  font-size: 110%;
+}

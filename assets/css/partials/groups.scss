@@ -1,0 +1,30 @@
+.group {
+	display: block !important;
+}
+
+.group>* {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.group>*:not(:first-child) {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.group>*:not(:last-child) {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+@media (min-width: 40.06rem) {
+	.group {
+		display: flex !important;
+	}
+
+	.group>* {
+		display: inline-block !important;
+		width: auto !important;
+	}
+}

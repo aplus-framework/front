@@ -1,0 +1,52 @@
+.border {
+	border: .06rem solid $border-default !important;
+}
+
+.border-top {
+	border-top: .06rem solid $border-default !important;
+}
+
+.border-bottom {
+	border-bottom: .06rem solid $border-default !important;
+}
+
+.border-left {
+	border-left: .06rem solid $border-default !important;
+}
+
+.border-right {
+	border-right: .06rem solid $border-default !important;
+}
+
+.border-separated>*:not(:last-child) {
+	border-right: .06rem solid $border-default;
+	border-bottom: .06rem solid $border-default;
+}
+
+.border-separated-right>*:not(:last-child) {
+	border-right: .06rem solid $border-default;
+}
+
+.border-separated-bottom>*:not(:last-child) {
+	border-bottom: .06rem solid $border-default;
+}
+
+.topbar {
+	border-top: .4rem solid map-get($primary, 'background') !important;
+}
+
+.bottombar {
+	border-bottom: .4rem solid map-get($primary, 'background') !important;
+}
+
+.leftbar {
+	border-left: .4rem solid map-get($primary, 'background') !important;
+}
+
+.rightbar {
+	border-right: .4rem solid map-get($primary, 'background') !important;
+}
+
+.border-0 {
+	border: 0 !important;
+}

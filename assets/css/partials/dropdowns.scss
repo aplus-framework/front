@@ -1,0 +1,58 @@
+
+.dropdown-click {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dropdown-hover {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover .dropdown-content {
+    display: block;
+  }
+}
+
+.dropdown-click:hover,
+.dropdown-hover:hover > button:first-child,
+.dropdown-click:hover > button:first-child,
+.dropdown-hover:hover > .btn:first-child,
+.dropdown-click:hover > .btn:first-child {
+  background-color: map-get($default, 'background');
+  color: $text-default;
+}
+
+.dropdown-content {
+  cursor: auto;
+  color: $text-default;
+  background-color: map-get($default, 'background');
+  display: none;
+  position: absolute;
+  min-width: 10.6rem;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.bar-block {
+  .dropdown-hover,
+  .dropdown-click {
+    width: 100%;
+  }
+
+  .dropdown-hover .dropdown-content,
+  .dropdown-click .dropdown-content {
+    min-width: 100%;
+  }
+
+  .dropdown-hover button,
+  .dropdown-click button,
+  .dropdown-hover .btn,
+  .dropdown-click .btn {
+    width: 100%;
+    text-align: left;
+    padding: .53rem 1.06rem;
+  }
+}

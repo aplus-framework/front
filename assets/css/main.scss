@@ -1,0 +1,65 @@
+@import "modules/utility";
+//
+$font-family-sans: Verdana, sans-serif;
+$font-family-serif: serif;
+$font-family-mono: Consolas, "courier new", monospace;
+$font-family-h: "Segoe UI", Arial, sans-serif;
+$font-size: 15;
+$font-color: #333;
+$font-color-h: $font-color;
+$background-color: #fff;
+$border-color: #ddd;
+$hr-border-color: #ddd;
+$primary-color: #9b4dca;
+$input-color: #555;
+$input-background-color: #f9f9f9;
+//
+$default: #fff;
+$primary: #a0a;
+
+//
+//$value-map: (text: #00ff00, background: #0000ff, border: #ff0000);
+$default: (
+	background: #fff,
+	foreground: color(#fff),
+	border: highlight(#fff)
+);
+$primary: (
+	background: #a0a,
+	foreground: #fff,
+	border: highlight(#a0a)
+);
+$info: (
+	background: #2c8cff,
+	foreground: #fff, //foreground: color(#2c8cff),
+	border: highlight(#2c8cff)
+);
+$success: (
+	background: #47c06e,
+	foreground: #fff, //foreground: color(#2c8cff),
+	border: highlight(#47c06e)
+);
+$warning: (
+	background: #cac215,
+	foreground: color(#cac215), //foreground: color(#2c8cff),
+	border: highlight(#cac215)
+);
+$error: (
+	background: #ff3044,
+	foreground: #fff, //foreground: color(#2c8cff),
+	border: highlight(#ff3044)
+);
+//
+$amount: 20%;
+//
+$background-default: map-get($default, 'background');
+$border-default: map-get($default, 'border');
+$text-default: map-get($default, 'foreground');
+// Tables
+$tables-background-color: #fff;
+$tables-border-color: #ddd;
+$tables-tr-striped-background-color: #ddd;
+$tables-tr-hovered-background-color: #ddd;
+$tables-th-font-wight: 400;
+//
+@import "partials/all";

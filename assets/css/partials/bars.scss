@@ -1,0 +1,87 @@
+.bar {
+	width: 100%;
+	background-color: map-get($default, 'background');
+	//overflow: hidden; // se habilitado dropdown não funciona
+}
+
+.center .bar {
+	display: inline-block;
+	width: auto;
+}
+
+.bar {
+
+	.bar-item,
+	.bar-items * {
+		padding: .53rem 1.06rem;
+		float: left;
+		width: auto;
+		display: block;
+		outline: 0;
+	}
+
+	a.bar-item,
+	.bar-items a {
+		display: inline-block;
+		padding: .53rem 1.06rem;
+		vertical-align: middle;
+		overflow: hidden;
+		text-decoration: none;
+		color: inherit;
+		background-color: inherit;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	a.bar-item:hover,
+	.bar-items a:hover {
+		background-color: rgba(0, 0, 0, .15);
+	}
+
+	.dropdown-hover,
+	.dropdown-click {
+		position: static;
+		float: left;
+	}
+
+	button,
+	.btn {
+		white-space: normal;
+	}
+}
+
+.bar-block {
+
+	.bar-item,
+	.bar-items * {
+		width: 100%;
+		display: block;
+		padding: .53rem 1.06rem;
+		text-align: left;
+		white-space: normal;
+		float: none;
+		outline: 0;
+	}
+
+	a.bar-item,
+	.bar-items a {
+		display: inline-block;
+		padding: .53rem 1.06rem;
+		vertical-align: middle;
+		overflow: hidden;
+		text-decoration: none;
+		color: inherit;
+		background-color: inherit;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	a.bar-item:hover,
+	.bar-items a:hover {
+		background-color: rgba(0, 0, 0, .15);
+	}
+
+	&.center .bar-item {
+		text-align: center;
+	}
+}

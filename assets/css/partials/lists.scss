@@ -1,0 +1,19 @@
+ul {
+	padding: 0 1rem;
+}
+
+.list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+
+	li,
+	.list-item {
+		padding: .53rem 1.06rem;
+		border-bottom: .06rem solid $border-default;
+
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}

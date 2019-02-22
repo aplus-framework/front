@@ -1,0 +1,32 @@
+img {
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.grayscale {
+  filter: grayscale(75%);
+}
+
+.grayscale-max,
+.hover-grayscale:hover {
+  filter: grayscale(100%);
+}
+
+.grayscale-min {
+  filter: grayscale(50%);
+}
+
+.sepia {
+  filter: sepia(75%);
+}
+
+.sepia-max,
+.hover-sepia:hover {
+  filter: sepia(100%);
+}
+
+.sepia-min {
+  filter: sepia(50%);
+}
