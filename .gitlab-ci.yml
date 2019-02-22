@@ -19,8 +19,6 @@ test:sass:
 test:jekyll:
   image: ruby:2.5
   stage: test
-  dependencies:
-    - test:sass
   script:
     - bundle install --path vendor
     - bundle exec jekyll build -d build/
