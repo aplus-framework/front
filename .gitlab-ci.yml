@@ -6,7 +6,9 @@ cache:
     - vendor/
 
 before_script:
-  - gem install sass
+  - apt-get update -yqq
+  - apt-get install -yqq npm
+  - npm install -g sass
   - bundle install --path vendor
 
 test:build:
