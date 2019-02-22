@@ -12,6 +12,7 @@ test:build:
   stage: test
   script:
     - bundle exec jekyll build -d build/
+    - sass --trace assets/css/main.scss:build/assets/css/main.css
   artifacts:
     paths:
       - build
