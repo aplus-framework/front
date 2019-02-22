@@ -1,7 +1,7 @@
 ---
 url: https://the-framework.gitlab.io/front
 title: Front
-timezone: UTC
+timezone: America/Sao_Paulo
 
 markdown: kramdown
 highlighter: false
