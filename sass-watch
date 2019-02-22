@@ -1,0 +1,2 @@
+#!/bin/bash
+sass --trace --watch assets/css/main.scss:assets/css/main.css
