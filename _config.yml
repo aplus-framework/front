@@ -13,4 +13,6 @@ exclude:
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - jekyll-serve
+  - sass-watch
   - README.md
