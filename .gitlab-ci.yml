@@ -1,21 +1,29 @@
 ---
-image: ruby:2.5
-
 cache:
   paths:
     - vendor/
+    - node_modules/
 
-before_script:
-  - apt-get update -yqq
-  - apt-get install -yqq npm
-  - npm install -g sass
-  - bundle install --path vendor
-
-test:build:
+test:sass:
+  image: node:10.15
   stage: test
+  before_script:
+    - npm install -g sass
   script:
-    - bundle exec jekyll build -d build/
+    - mkdir -p build/assets/css/
     - sass --trace assets/css/main.scss:build/assets/css/main.css
+  artifacts:
+    paths:
+      - build
+
+test:jekyll:
+  image: ruby:2.5
+  stage: test
+  dependencies:
+    - test:sass
+  script:
+    - bundle install --path vendor
+    - bundle exec jekyll build -d build/
   artifacts:
     paths:
       - build
@@ -23,7 +31,7 @@ test:build:
 pages:
   stage: deploy
   dependencies:
-    - test:build
+    - test:jekyll
   script:
     - mkdir public/
     - mv build/* public/
