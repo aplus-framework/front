@@ -6,6 +6,7 @@ cache:
     - vendor/
 
 before_script:
+  - gem install sass
   - bundle install --path vendor
 
 test:build:
