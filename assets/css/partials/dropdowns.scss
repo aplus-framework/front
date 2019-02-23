@@ -20,14 +20,14 @@
 .dropdown-click:hover > button:first-child,
 .dropdown-hover:hover > .btn:first-child,
 .dropdown-click:hover > .btn:first-child {
-  background-color: map-get($default, 'background');
-  color: $text-default;
+  background-color: $default;
+  color: pick-visible-color($default, #000, #fff);
 }
 
 .dropdown-content {
   cursor: auto;
-  color: $text-default;
-  background-color: map-get($default, 'background');
+  background-color: $default;
+  color: pick-visible-color($default, #000, #fff);
   display: none;
   position: absolute;
   min-width: 10.6rem;
