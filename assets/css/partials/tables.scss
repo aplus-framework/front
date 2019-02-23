@@ -7,48 +7,64 @@ table,
   display: table;
 }
 
+table,
+.table {
+  tr {
+  	transition: .3s;
+  }
+}
+
 .table-bordered,
 .table {
-  border: .06rem solid $border-default;
+  border: .06rem solid autoDarkenLighten($default, 30%);
 }
 
 .table-bordered,
 .table {
   tr {
-  	border-bottom: .06rem solid $border-default;
+  	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
   }
 }
 
 .table-bordered,
 .table {
   thead tr {
-  	border-bottom: .13rem solid $border-default;
+  	border-bottom: .13rem solid autoDarkenLighten($default, 30%);
   }
 }
 
 .table-bordered {
 	td, th {
-		border-right: .06rem solid $border-default;
+		border-right: .06rem solid autoDarkenLighten($default, 30%);
 	}
 }
 
 .table-striped tbody tr:nth-child(even) {
-  background-color: highlight(map-get($default, 'background'), 5%);
+  background-color: autoDarkenLighten($default, 20%);
+  color: autoDarkenLighten(
+		autoDarkenLighten($default, 20%), 80%
+	);
 }
 
 .table tr {
-  &:nth-child(odd) {
-    background-color: map-get($default, 'background');
-  }
+ /*  &:nth-child(odd) {
+   background-color: $default;
+ } */
 
   &:nth-child(even) {
-    background-color: highlight(map-get($default, 'background'), 5%);
+    background-color: autoDarkenLighten($default, 10%);
+    color: autoDarkenLighten(
+		autoDarkenLighten($default, 10%), 80%
+	);
   }
 }
 
 .table-hoverable tbody tr:hover,
 .list.table-hoverable li:hover {
-  background-color: highlight(map-get($default, 'background'), 10%);
+  background-color: autoDarkenLighten($default, 15%);
+  color: autoDarkenLighten(
+		autoDarkenLighten($default, 15%), 80%
+	);
 }
 
 .table-centered tr {
