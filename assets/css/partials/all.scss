@@ -17,9 +17,9 @@ html,
 body {
 	font-family: $font-family-sans;
 	font-size: 1rem;
-	color: $text-default;
+	color: autoDarkenLighten($default, 80%);
 	line-height: 1.5;
-	background-color: $background-default;
+	background-color: $default;
 }
 
 html {
@@ -32,7 +32,13 @@ html {
 @import "forms";
 @import "dropdowns";
 @import "modals";
-@import "layout";
+// @import "layout";
+@import "flexbox";
+@import "positions";
+@import "rounds";
+@import "paddings";
+@import "margins";
+@import "groups";
 
 @media (max-width: 80.33rem) {
 	.auto {
