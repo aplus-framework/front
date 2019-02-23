@@ -1,17 +1,19 @@
 button,
 .btn {
-	border: .06rem $border-default solid;
+	border: .06rem autoDarkenLighten($default, 30%) solid;
 	border-radius: .26rem;
 	display: inline-block;
-	padding: .53rem 1.06rem;
+	padding: .53rem .8rem;
 	vertical-align: middle;
 	overflow: hidden;
 	text-decoration: none;
-	color: $text-default;
-	background-color: highlight(map-get($default, 'background'), 2%);
+	//color: $text-default;
+	//background-color: highlight($default, 2%);
 	text-align: center;
 	cursor: pointer;
 	white-space: nowrap;
+	@include colors(autoDarkenLighten($default, 2%));
+	transition: .3s;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -19,11 +21,42 @@ button,
 	user-select: none;
 }
 
+button > *,
+.btn > * {
+	vertical-align: middle;
+}
+
+button:hover,
+.btn:hover {
+	@include colorsHover(autoDarkenLighten($default, 2%));
+	border-color: autoDarkenLighten($default, 30%);
+	text-decoration: none;
+}
+
+button:focus,
+button.active,
+button:active,
+.btn:focus,
+.btn.active,
+.btn:active {
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.25);
+}
+
+button:active,
+.btn:active,
+button:not(.disabled),
+button:not(:disabled),
+.btn:not(.disabled),
+.btn:not(:disabled) {
+  transform: translateY(1px);
+}
+
 button:disabled,
 .btn:disabled,
 .disabled {
 	cursor: not-allowed;
-	opacity: .3;
+	opacity: .4;
+	box-shadow: none !important;
 }
 
 .disabled *,
@@ -37,25 +70,6 @@ button.shadow,
 	&:disabled:hover {
 		box-shadow: none;
 	}
-}
-
-button:hover,
-.btn:hover {
-	color: $text-default;
-	background-color: highlight(map-get($default, 'background'), 10%);
-}
-
-button:focus,
-button.active,
-.btn:focus,
-.btn.active {
-	background-color: highlight(map-get($default, 'background'), 15%);
-}
-
-button:active,
-.btn:active {
-  transform: translateY(1px);
-  filter: saturate(150%);
 }
 
 .badge,
