@@ -5,5 +5,6 @@ title: Front
 
 - [Buttons]({{site.url}}/examples/buttons.html)
 - [Forms]({{site.url}}/examples/forms.html)
+- [Flexbox]({{site.url}}/examples/flexbox.html)
 - [Modals]({{site.url}}/examples/modals.html)
 - [Tables]({{site.url}}/examples/tables.html)
