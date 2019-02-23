@@ -1,77 +1,125 @@
 // Default
 .default {
-	@include colors($default...);
+	@include colors($default);
+	border-color: autoDarkenLighten($default, 30%);
+}
+
+.default-hover,
+button.default:hover,
+.btn.default:hover {
+	@include colorsHover($default);
+	border-color: autoDarkenLighten($default, 30%);
 }
 
 .text-default {
-	color: map-get($default, 'background');
+	color: $default;
 }
 
 .border-default {
-	border-color: map-get($default, 'border');
+	border-color: $default;
 }
 
 // Primary
 .primary {
-	@include colors($primary...);
+	@include colors($primary);
+	border-color: darken($primary, 30%);
+}
+
+.primary-hover,
+button.primary:hover,
+.btn.primary:hover  {
+	@include colorsHover($primary);
+	border-color: darken($primary, 30%);
 }
 
 .text-primary {
-	color: map-get($primary, 'background');
+	color: $primary;
 }
 
 .border-primary {
-	border-color: map-get($primary, 'border');
+	border-color: $primary;
 }
 
 // Info
 .info {
-	@include colors($info...);
+	@include colors($info);
+	border-color: darken($info, 30%);
+}
+
+.info-hover,
+button.info:hover,
+.btn.info:hover {
+	@include colorsHover($info);
+	border-color: darken($info, 30%);
 }
 
 .text-info {
-	color: map-get($info, 'background');
+	color: $info;
 }
 
 .border-info {
-	border-color: map-get($info, 'border');
+	border-color: $info;
 }
 
 // Success
 .success {
-	@include colors($success...);
+	@include colors($success);
+	border-color: darken($success, 30%);
+}
+
+.success-hover,
+button.success:hover,
+.btn.success:hover {
+	@include colorsHover($success);
+	border-color: darken($success, 30%);
 }
 
 .text-success {
-	color: map-get($success, 'background');
+	color: $success;
 }
 
 .border-success {
-	border-color: map-get($success, 'border');;
+	border-color: $success;
 }
 
 // Warning
 .warning {
-	@include colors($warning...);
+	@include colors($warning);
+	border-color: darken($warning, 30%);
+}
+
+.warning-hover,
+button.warning:hover,
+.btn.warning:hover {
+	@include colorsHover($warning);
+	border-color: darken($warning, 30%);
 }
 
 .text-warning {
-	color: map-get($warning, 'background');
+	color: $warning;
 }
 
 .border-warning {
-	border-color: map-get($warning, 'border');
+	border-color: $warning;
 }
 
 // Error
 .error {
-	@include colors($error...);
+	@include colors($error);
+	border-color: darken($error, 30%);
+}
+
+.error-hover,
+button.error:hover,
+.btn.error:hover {
+	@include colorsHover($error);
+	border-color: darken($error, 30%);
 }
 
 .text-error {
-	color: map-get($error, 'background');
+	color: $error;
 }
 
 .border-error {
-	border-color: map-get($error, 'border');
+	border-color: $error;
 }
