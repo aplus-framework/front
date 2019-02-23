@@ -1,0 +1,49 @@
+.float-left {
+  float: left !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.fixed-top,
+.fixed-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.fixed-top {
+  top: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+}
+
+.centered {
+  margin: auto;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.inline {
+  display: inline-block !important;
+}
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+.responsive {
+  display: block;
+  overflow-x: auto;
+}
+
