@@ -3,13 +3,13 @@ title: Modals
 layout: example
 ---
 
-<button onclick="document.getElementById('modal-1').style.display='block'">
+<button data-type="modal"  data-target="modal-1">
 	Open Modal 1
 </button>
 <div id="modal-1" class="modal">
 	<div class="modal-content">
 		<div class="container">
-			<span onclick="document.getElementById('modal-1').style.display='none'" class="display-topright">&times;</span>
+			<span class="display-topright close">&times;</span>
 			<p>Some text in the Modal..</p>
 			<p>Some text in the Modal..</p>
 		</div>
@@ -22,7 +22,7 @@ layout: example
 <div id="modal-2" class="modal">
 	<div class="modal-content shadow animate-zoom">
 		<header class="container success">
-			<span onclick="document.getElementById('modal-2').style.display='none'" class="btn display-topright">&times;</span>
+			<span class="btn display-topright close">&times;</span>
 			<h2>Modal Header</h2>
 		</header>
 		<div class="container">
@@ -38,19 +38,21 @@ layout: example
 
 <script>
 	var buttons = document.querySelectorAll('[data-type=modal]');
-	for (var i = buttons.length - 1; i >= 0; i--) {
-		buttons[i].onclick = function () {
-			console.log(this);
-			console.log(this.dataset.type);
-			console.log(this.dataset.target);
+	for (var b = buttons.length - 1; b >= 0; b--) {
+		buttons[b].addEventListener('click', function() {
 			if (this.dataset.target) {
 				var modal = document.getElementById(this.dataset.target);
 				if (modal) {
 					modal.style.display = 'block';
+					let closes = modal.getElementsByClassName('close');
+					for (var c = closes.length - 1; c >= 0; c--) {
+						closes[c].addEventListener('click', function(){
+							modal.style.display='none';
+						});
+					}
 				}
 			}
-			//
-		};
+		});
 	}
 </script>
 
