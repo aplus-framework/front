@@ -159,7 +159,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-	border: 1px solid $border-default;
+	border: 1px solid autoDarkenLighten($default, 30%);
 	margin: 0 2px;
 	padding: .35em .625em .75em
 }
