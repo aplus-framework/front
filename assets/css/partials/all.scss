@@ -1,3 +1,4 @@
+/* All */
 html {
 	box-sizing: border-box;
 }
@@ -11,7 +12,8 @@ html {
 	}
 }
 
-@import "normalize";
+// @import "normalize";
+@import "reset";
 
 html,
 body {
@@ -39,6 +41,8 @@ html {
 @import "paddings";
 @import "margins";
 @import "groups";
+@import "borders";
+@import "lists";
 
 @media (max-width: 80.33rem) {
 	.auto {

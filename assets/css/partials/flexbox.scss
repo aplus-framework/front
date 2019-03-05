@@ -1,3 +1,4 @@
+/* Flexbox */
 .row ,
 .row-padding {
 	display: flex;
@@ -27,6 +28,12 @@
 .column-padding > *,
 .box-padding {
 	padding: .26rem !important;
+}
+
+.row-margin > *,
+.column-margin > *,
+.box-margin {
+	margin: .26rem !important;
 }
 
 .box,
@@ -106,6 +113,7 @@
 	align-self: stretch;
 }
 
+// TODO - prefix box- where are box classes
 .align-content-start {
 	align-content: flex-start;
 }
@@ -192,4 +200,11 @@
 		flex-basis: 100%;
 		display: block;
 	}
+}
+
+.display-flex {
+	display: flex;
+}
+.display-flex > * {
+	flex: 1;
 }

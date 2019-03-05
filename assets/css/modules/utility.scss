@@ -64,6 +64,14 @@
 	@return lighten($color, $amount);
 }
 
+@function darkLight($color, $dark: 25%, $light: 25%) {
+	@if pick-visible-color($color, black, white) == black {
+		@return darken($color, $light);
+	}
+
+	@return lighten($color, $dark);
+}
+
 @mixin colors($background) {
 	color: pick-visible-color($background, #000, #fff);
 	background-color: $background;

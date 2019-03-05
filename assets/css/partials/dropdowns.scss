@@ -1,33 +1,21 @@
+/* Dropdowns */
+.dropdown {
+	display: inline-block;
+	cursor: pointer;
+	//overflow: hidden;
 
-.dropdown-click {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
+	&:hover {
+		.dropdown-content,
+		.dropdown-content-mega {
+			display: block;
+		}
+	}
 }
 
-.dropdown-hover {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-
-  &:hover .dropdown-content {
-    display: block;
-  }
-}
-
-.dropdown-click:hover,
-.dropdown-hover:hover > button:first-child,
-.dropdown-click:hover > button:first-child,
-.dropdown-hover:hover > .btn:first-child,
-.dropdown-click:hover > .btn:first-child {
-  background-color: $default;
-  color: pick-visible-color($default, #000, #fff);
-}
-
-.dropdown-content {
+.dropdown-content,
+.dropdown-content-mega {
   cursor: auto;
   background-color: $default;
-  color: pick-visible-color($default, #000, #fff);
   display: none;
   position: absolute;
   min-width: 10.6rem;
@@ -36,23 +24,7 @@
   z-index: 1;
 }
 
-.bar-block {
-  .dropdown-hover,
-  .dropdown-click {
-    width: 100%;
-  }
-
-  .dropdown-hover .dropdown-content,
-  .dropdown-click .dropdown-content {
-    min-width: 100%;
-  }
-
-  .dropdown-hover button,
-  .dropdown-click button,
-  .dropdown-hover .btn,
-  .dropdown-click .btn {
-    width: 100%;
-    text-align: left;
-    padding: .53rem 1.06rem;
-  }
+.dropdown-content-mega {
+	width: 100%;
+	left: 0;
 }

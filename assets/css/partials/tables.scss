@@ -1,65 +1,103 @@
-
+/* Tables */
 table,
-.table {
+.table,
+.table-all {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   display: table;
-}
 
-table,
-.table {
   tr {
   	transition: .3s;
   }
-}
 
-.table-bordered,
-.table {
-  border: .06rem solid autoDarkenLighten($default, 30%);
-}
+  th,
+  td {
+    padding: .53rem .53rem;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top;
+  }
 
-.table-bordered,
-.table {
-  tr {
-  	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+  th {
+		font-weight: bold;
+	}
+
+  th:first-child,
+  td:first-child {
+    padding-left: 1.06rem;
   }
 }
 
+.table,
+.table-all {
+  tr {
+	 &:nth-child(odd) {
+	   background-color: $default;
+	 }
+
+	  &:nth-child(even) {
+	    background-color: autoDarkenLighten($default, 10%);
+	    color: autoDarkenLighten(
+			autoDarkenLighten($default, 10%), 80%
+		);
+	  }
+  }
+}
+
+// table,
+// .table {
+//   tr {
+//   	transition: .3s;
+//   }
+// }
+
+.table,
 .table-bordered,
-.table {
+.table-all {
+  border: .06rem solid autoDarkenLighten($default, 30%);
+
+  tr {
+  	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+  }
+
   thead tr {
   	border-bottom: .13rem solid autoDarkenLighten($default, 30%);
   }
 }
 
-.table-bordered {
+// .table-bordered,
+// .table {
+//   tr {
+//   	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+//   }
+// }
+
+// .table-bordered,
+// .table {
+//   thead tr {
+//   	border-bottom: .13rem solid autoDarkenLighten($default, 30%);
+//   }
+// }
+
+.table-bordered,
+.table-all {
 	td, th {
 		border-right: .06rem solid autoDarkenLighten($default, 30%);
 	}
 }
 
-.table-striped tbody tr:nth-child(even) {
-  background-color: autoDarkenLighten($default, 20%);
-  color: autoDarkenLighten(
-		autoDarkenLighten($default, 20%), 80%
-	);
-}
-
-.table tr {
- /*  &:nth-child(odd) {
-   background-color: $default;
- } */
-
-  &:nth-child(even) {
-    background-color: autoDarkenLighten($default, 10%);
-    color: autoDarkenLighten(
-		autoDarkenLighten($default, 10%), 80%
-	);
-  }
+.table-striped {
+	tbody tr:nth-child(even) {
+ 	 background-color: autoDarkenLighten($default, 20%);
+  	color: autoDarkenLighten(
+			autoDarkenLighten($default, 20%), 80%
+		);
+	}
 }
 
 .table-hoverable tbody tr:hover,
+.table-all tbody tr:hover,
 .list.table-hoverable li:hover {
   background-color: autoDarkenLighten($default, 15%);
   color: autoDarkenLighten(
@@ -74,26 +112,27 @@ table,
   }
 }
 
-table,
-.table {
-  td,
-  th {
-    padding: .53rem .53rem;
-    display: table-cell;
-    text-align: left;
-    vertical-align: top;
-  }
-}
+// table,
+// .table {
+//   td,
+//   th {
+//     padding: .53rem .53rem;
+//     display: table-cell;
+//     text-align: left;
+//     vertical-align: top;
+//   }
+// }
 
-table,
-.table {
-  th:first-child,
-  td:first-child {
-    padding-left: 1.06rem;
-  }
-}
+// table,
+// .table {
+//   th:first-child,
+//   td:first-child {
+//     padding-left: 1.06rem;
+//   }
+// }
 
-table th,
-.table  th {
-	font-weight: bold;
-}
+// table th,
+// .table  th {
+// 	font-weight: bold;
+// }
+// TODO: .table.table-bordered.table-hoverable = .table-all

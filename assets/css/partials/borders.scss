@@ -1,52 +1,77 @@
+/* Borders */
 .border {
-	border: .06rem solid $border-default !important;
+	border: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
 .border-top {
-	border-top: .06rem solid $border-default !important;
+	border-top: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
 .border-bottom {
-	border-bottom: .06rem solid $border-default !important;
+	border-bottom: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
 .border-left {
-	border-left: .06rem solid $border-default !important;
+	border-left: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
 .border-right {
-	border-right: .06rem solid $border-default !important;
+	border-right: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
 .border-separated>*:not(:last-child) {
-	border-right: .06rem solid $border-default;
-	border-bottom: .06rem solid $border-default;
+	border-right: .06rem solid autoDarkenLighten($default, 30%);
+	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
 }
 
 .border-separated-right>*:not(:last-child) {
-	border-right: .06rem solid $border-default;
+	border-right: .06rem solid autoDarkenLighten($default, 30%);
 }
 
 .border-separated-bottom>*:not(:last-child) {
-	border-bottom: .06rem solid $border-default;
+	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
 }
 
 .topbar {
-	border-top: .4rem solid map-get($primary, 'background') !important;
+	border-top: .4rem solid $primary !important;
 }
 
 .bottombar {
-	border-bottom: .4rem solid map-get($primary, 'background') !important;
+	border-bottom: .4rem solid $primary !important;
+}
+
+.bottombar-hover {
+	border-bottom: .4rem solid transparent !important;
+}
+
+.bottombar-hover:hover {
+	border-bottom: .4rem solid $primary !important;
 }
 
 .leftbar {
-	border-left: .4rem solid map-get($primary, 'background') !important;
+	border-left: .4rem solid $primary !important;
 }
 
 .rightbar {
-	border-right: .4rem solid map-get($primary, 'background') !important;
+	border-right: .4rem solid $primary !important;
 }
 
 .border-0 {
 	border: 0 !important;
+}
+
+.border-left-0 {
+	border-left: 0 !important;
+}
+
+.border-right-0 {
+	border-right: 0 !important;
+}
+
+.border-top-0 {
+	border-top: 0 !important;
+}
+
+.border-bottom-0 {
+	border-bottom: 0 !important;
 }

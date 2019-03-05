@@ -1,41 +1,73 @@
+/* Forms */
 input,
 select,
 textarea {
-  padding: .53rem;
-  display: block;
-  border: .06rem solid autoDarkenLighten($default, 30%);
-  border-radius: .26rem;
-  width: 100%;
-  color: autoDarkenLighten($default, 80%);
-  background-color: $default;
-  transition: .3s;
-  // box-shadow: inset 0 2px 2px rgba(0,0,0,.05);
+	padding: .53rem;
+	margin-top: .06rem;
+	display: block;
+	border: .06rem solid autoDarkenLighten($default, 50%);
+	border-radius: .26rem;
+	width: 100%;
+	color: autoDarkenLighten($default, 80%);
+	background-color: darkLight($default, 10%, 1%);
+	transition: .3s;
+	// box-shadow: inset 0 2px 2px rgba(0,0,0,.05);
+
+	&:focus {
+		border-color: $primary;
+		background-color: darkLight($default, 15%, 3%);
+		outline: 0;
+		//box-shadow: 0 0 0 .2rem rgba(darkLight($primary, 30%, 20%), .3);
+	}
 }
 
-select {
-  padding: .56rem 0;
-}
+// select {
+// 	//padding: .56rem 0;
+
+// // TODO: usar triangulo com mesma cor do texto
+// // 	background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+// // 	background-repeat: no-repeat, repeat;
+// // 	background-position: right .7em top 50%, 0 0;
+// // 	background-size: .65em auto, 100%;
+// }
 
 input:focus,
 select:focus,
 textarea:focus {
 	border-color: $primary;
-	background-color: autoDarkenLighten($default, 2%);
+	background-color: darkLight($default, 15%, 3%);
+	outline: 0;
+	//box-shadow: 0 0 0 .2rem rgba(darkLight($primary, 30%, 20%), .3);
 }
 
 [type=checkbox],
 [type=radio] {
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  vertical-align: middle;
+	width: 1rem;
+	height: 1rem;
+	position: relative;
+	vertical-align: middle;
 }
 
 [type=checkbox] {
-  margin-top: -.06rem;
+	margin-top: -.06rem;
 }
 
 label {
-  font-weight: 500;
-  //margin-top: 1.06rem;
+	font-weight: 500;
+	//margin-top: 1.06rem;
 }
+
+legend {
+	border: .06rem solid autoDarkenLighten($default, 30%);
+	padding: .26rem .53rem;
+}
+
+fieldset {
+	border: .06rem solid autoDarkenLighten($default, 30%);
+	padding: .53rem;
+
+	&:not(:first-child) {
+		margin-top: 1.06rem;
+	}
+}
+

@@ -1,10 +1,10 @@
-// Default
+/* Colors */
 .default {
 	@include colors($default);
 	border-color: autoDarkenLighten($default, 30%);
 }
 
-.default-hover,
+.default-hover:hover,
 button.default:hover,
 .btn.default:hover {
 	@include colorsHover($default);
@@ -25,7 +25,7 @@ button.default:hover,
 	border-color: darken($primary, 30%);
 }
 
-.primary-hover,
+.primary-hover:hover,
 button.primary:hover,
 .btn.primary:hover  {
 	@include colorsHover($primary);
@@ -46,7 +46,7 @@ button.primary:hover,
 	border-color: darken($info, 30%);
 }
 
-.info-hover,
+.info-hover:hover,
 button.info:hover,
 .btn.info:hover {
 	@include colorsHover($info);
@@ -67,7 +67,7 @@ button.info:hover,
 	border-color: darken($success, 30%);
 }
 
-.success-hover,
+.success-hover:hover,
 button.success:hover,
 .btn.success:hover {
 	@include colorsHover($success);
@@ -88,7 +88,7 @@ button.success:hover,
 	border-color: darken($warning, 30%);
 }
 
-.warning-hover,
+.warning-hover:hover,
 button.warning:hover,
 .btn.warning:hover {
 	@include colorsHover($warning);
@@ -109,7 +109,7 @@ button.warning:hover,
 	border-color: darken($error, 30%);
 }
 
-.error-hover,
+.error-hover:hover,
 button.error:hover,
 .btn.error:hover {
 	@include colorsHover($error);

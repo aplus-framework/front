@@ -1,3 +1,4 @@
+/* Rounds */
 .round {
   border-radius: .26rem;
 }
@@ -16,4 +17,8 @@
 
 .circle {
   border-radius: 50%;
+}
+
+.no-round {
+	border-radius: 0;
 }

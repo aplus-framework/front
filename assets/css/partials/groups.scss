@@ -1,11 +1,11 @@
+/* Groups */
 .group {
-	display: block !important;
+	display: flex !important;
 }
-
-.group>* {
-	display: block !important;
-	width: 100% !important;
-	margin: 0 !important;
+.group > * {
+	flex: 1 !important;
+	// margin: 0 !important;
+	// TODO: input needs margin-top: 1px; -- added on forms.scss, maybe here is better
 }
 
 .group>*:not(:first-child) {
@@ -18,13 +18,13 @@
 	border-bottom-right-radius: 0 !important;
 }
 
-@media (min-width: 40.06rem) {
-	.group {
-		display: flex !important;
-	}
+//  @media (min-width: 40.06rem) {
+// 	.group {
+// 		display: flex !important;
+// 	}
 
-	.group>* {
-		display: inline-block !important;
-		width: auto !important;
-	}
-}
+// 	.group>* {
+// 		display: inline-block !important;
+// 		width: auto !important;
+// 	}
+// }

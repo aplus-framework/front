@@ -1,14 +1,5 @@
 @import "modules/utility";
 //
-$font-family-sans: "DejaVu Sans", "Open Sans", Arial, Helvetica, sans-serif;
-$font-family-serif: "DejaVu Serif", serif;
-$font-family-mono: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
-//
-$default: #fff;
-$primary: #a0a;
-$info: #2c8cff;
-$success: #47c06e;
-$warning: #cac215;
-$error: #ff3044;
+@import "variables";
 //
 @import "partials/all";

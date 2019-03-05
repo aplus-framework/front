@@ -1,49 +1,51 @@
+/* Positions */
 .float-left {
-  float: left !important;
+	float: left !important;
 }
 
 .float-right {
-  float: right !important;
+	float: right !important;
 }
 
 .fixed-top,
 .fixed-bottom {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 .fixed-top {
-  top: 0;
+	top: 0;
 }
 
 .fixed-bottom {
-  bottom: 0;
+	bottom: 0;
 }
 
 .centered {
-  margin: auto;
+	margin: auto;
 }
 
 .hide {
-  display: none !important;
+	display: none !important;
 }
 
 .show {
-  display: block !important;
+	display: block !important;
 }
 
 .inline {
-  display: inline-block !important;
+	display: inline-block !important;
 }
 
 .block {
-  display: block;
-  width: 100%;
+	display: block;
+	width: 100%;
 }
 
 .responsive {
-  display: block;
-  overflow-x: auto;
+	display: block;
+	overflow-x: auto;
 }
 
