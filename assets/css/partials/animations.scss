@@ -1,146 +1,146 @@
 /* Animations */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
 }
 
 .spin {
-  animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
 }
 
 @keyframes fading {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .animate-fading {
-  animation: fading 10s infinite;
+	animation: fading 10s infinite;
 }
 
 @keyframes opac {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .animate-opacity {
-  animation: opac .8s;
+	animation: opac .8s;
 }
 
 @keyframes animatetop {
-  from {
-    top: -20rem;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
+	from {
+		top: -20rem;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
 .animate-top {
-  position: relative;
-  animation: animatetop .4s;
+	position: relative;
+	animation: animatetop .4s;
 }
 
 @keyframes animateleft {
-  from {
-    left: -20rem;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
+	from {
+		left: -20rem;
+		opacity: 0;
+	}
+	to {
+		left: 0;
+		opacity: 1;
+	}
 }
 
 .animate-left {
-  position: relative;
-  animation: animateleft .4s;
+	position: relative;
+	animation: animateleft .4s;
 }
 
 @keyframes animateright {
-  from {
-    right: -20rem;
-    opacity: 0;
-  }
-  to {
-    right: 0;
-    opacity: 1;
-  }
+	from {
+		right: -20rem;
+		opacity: 0;
+	}
+	to {
+		right: 0;
+		opacity: 1;
+	}
 }
 
 .animate-right {
-  position: relative;
-  animation: animateright .4s;
+	position: relative;
+	animation: animateright .4s;
 }
 
 @keyframes animatebottom {
-  from {
-    bottom: -20rem;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+	from {
+		bottom: -20rem;
+		opacity: 0;
+	}
+	to {
+		bottom: 0;
+		opacity: 1;
+	}
 }
 
 .animate-bottom {
-  position: relative;
-  animation: animatebottom .4s;
+	position: relative;
+	animation: animatebottom .4s;
 }
 
 @keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
+	from {
+		transform: scale(0);
+	}
+	to {
+		transform: scale(1);
+	}
 }
 
 .animate-zoom {
-  animation: animatezoom .6s;
+	animation: animatezoom .6s;
 }
 
 .animate-input {
-  transition: width .4s ease-in-out;
+	transition: width .4s ease-in-out;
 
-  &:focus {
-    width: 100% !important;
-  }
+	&:focus {
+		width: 100% !important;
+	}
 }
 
 .opacity,
-.hover-opacity:hover {
-  opacity: .6;
+.opacity-hover:hover {
+	opacity: .6;
 }
 
 .opacity-off,
-.hover-opacity-off:hover {
-  opacity: 1;
+.opacity-hover-off:hover {
+	opacity: 1;
 }
 
 .opacity-max {
-  opacity: .25;
+	opacity: .25;
 }
 
 .opacity-min {
-  opacity: .75;
+	opacity: .75;
 }
 

@@ -11,7 +11,7 @@ img {
 }
 
 .grayscale-max,
-.hover-grayscale:hover {
+.grayscale-hover:hover {
   filter: grayscale(100%);
 }
 
@@ -24,10 +24,25 @@ img {
 }
 
 .sepia-max,
-.hover-sepia:hover {
+.sepia-hover:hover {
   filter: sepia(100%);
 }
 
 .sepia-min {
   filter: sepia(50%);
 }
+
+.blur {
+	filter: blur(.3rem);
+}
+
+.blur-max,
+.blur-hover:hover {
+	filter: blur(.6rem);
+}
+
+.blur-min {
+	filter: blur(.1rem);
+}
+
+

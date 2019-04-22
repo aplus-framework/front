@@ -43,6 +43,7 @@ html {
 @import "groups";
 @import "borders";
 @import "lists";
+@import "images";
 
 @media (max-width: 80.33rem) {
 	.auto {
@@ -161,6 +162,6 @@ html {
 	z-index: 2;
 }
 
-@import "displays";
+@import "displays"; // TODO: Use flexbox
 @import "animations";
 @import "colors";
