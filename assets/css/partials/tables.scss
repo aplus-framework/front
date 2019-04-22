@@ -2,47 +2,47 @@
 table,
 .table,
 .table-all {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  display: table;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	display: table;
 
-  tr {
-  	transition: .3s;
-  }
+	tr {
+		transition: .3s;
+	}
 
-  th,
-  td {
-    padding: .53rem .53rem;
-    display: table-cell;
-    text-align: left;
-    vertical-align: top;
-  }
+	th,
+	td {
+		padding: .53rem .53rem;
+		display: table-cell;
+		text-align: left;
+		vertical-align: top;
+	}
 
-  th {
+	th {
 		font-weight: bold;
 	}
 
-  th:first-child,
-  td:first-child {
-    padding-left: 1.06rem;
-  }
+	th:first-child,
+	td:first-child {
+		padding-left: 1.06rem;
+	}
 }
 
 .table,
 .table-all {
-  tr {
-	 &:nth-child(odd) {
-	   background-color: $default;
-	 }
+	tr {
+		&:nth-child(odd) {
+			background-color: $default;
+		}
 
-	  &:nth-child(even) {
-	    background-color: autoDarkenLighten($default, 10%);
-	    color: autoDarkenLighten(
-			autoDarkenLighten($default, 10%), 80%
-		);
-	  }
-  }
+		&:nth-child(even) {
+			background-color: autoDarkenLighten($default, 10%);
+			color: autoDarkenLighten(
+					autoDarkenLighten($default, 10%), 80%
+			);
+		}
+	}
 }
 
 // table,
@@ -55,15 +55,15 @@ table,
 .table,
 .table-bordered,
 .table-all {
-  border: .06rem solid autoDarkenLighten($default, 30%);
+	border: .06rem solid autoDarkenLighten($default, 30%);
 
-  tr {
-  	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
-  }
+	tr {
+		border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+	}
 
-  thead tr {
-  	border-bottom: .13rem solid autoDarkenLighten($default, 30%);
-  }
+	thead tr {
+		border-bottom: .13rem solid autoDarkenLighten($default, 30%);
+	}
 }
 
 // .table-bordered,
@@ -89,9 +89,9 @@ table,
 
 .table-striped {
 	tbody tr:nth-child(even) {
- 	 background-color: autoDarkenLighten($default, 20%);
-  	color: autoDarkenLighten(
-			autoDarkenLighten($default, 20%), 80%
+		background-color: autoDarkenLighten($default, 20%);
+		color: autoDarkenLighten(
+				autoDarkenLighten($default, 20%), 80%
 		);
 	}
 }
@@ -99,17 +99,17 @@ table,
 .table-hoverable tbody tr:hover,
 .table-all tbody tr:hover,
 .list.table-hoverable li:hover {
-  background-color: autoDarkenLighten($default, 15%);
-  color: autoDarkenLighten(
-		autoDarkenLighten($default, 15%), 80%
+	background-color: autoDarkenLighten($default, 15%);
+	color: autoDarkenLighten(
+			autoDarkenLighten($default, 15%), 80%
 	);
 }
 
 .table-centered tr {
-  th,
-  td {
-    text-align: center;
-  }
+	th,
+	td {
+		text-align: center;
+	}
 }
 
 // table,

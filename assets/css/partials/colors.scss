@@ -27,7 +27,7 @@ button.default:hover,
 
 .primary-hover:hover,
 button.primary:hover,
-.btn.primary:hover  {
+.btn.primary:hover {
 	@include colorsHover($primary);
 	border-color: darken($primary, 30%);
 }

@@ -2,18 +2,19 @@
 .group {
 	display: flex !important;
 }
+
 .group > * {
 	flex: 1 !important;
 	// margin: 0 !important;
 	// TODO: input needs margin-top: 1px; -- added on forms.scss, maybe here is better
 }
 
-.group>*:not(:first-child) {
+.group > *:not(:first-child) {
 	border-top-left-radius: 0 !important;
 	border-bottom-left-radius: 0 !important;
 }
 
-.group>*:not(:last-child) {
+.group > *:not(:last-child) {
 	border-top-right-radius: 0 !important;
 	border-bottom-right-radius: 0 !important;
 }

@@ -41,7 +41,7 @@ a {
 }
 
 a:hover {
-	color: 	pick-visible-color($default, darken($primary, 10%), lighten($primary, 10%));
+	color: pick-visible-color($default, darken($primary, 10%), lighten($primary, 10%));
 	text-decoration: underline;
 }
 
@@ -120,7 +120,7 @@ pre {
 	background-color: autoDarkenLighten($default, 10%);
 	padding: .53rem .8rem;
 	border: .06rem solid autoDarkenLighten($default, 30%);
- // border-left: .26rem solid autoDarkenLighten($primary, 5%);
+	// border-left: .26rem solid autoDarkenLighten($primary, 5%);
 	word-wrap: break-word;
 	-moz-tab-size: 4;
 	-o-tab-size: 4;
@@ -135,8 +135,8 @@ pre {
 }
 
 :not(pre) > code {
-	color: autoDarkenLighten(autoDarkenLighten($default,10%), 80%);
-	background-color: autoDarkenLighten($default,10%);
+	color: autoDarkenLighten(autoDarkenLighten($default, 10%), 80%);
+	background-color: autoDarkenLighten($default, 10%);
 	padding-left: .3rem;
 	padding-right: .3rem;
 	font-size: 110%;
@@ -150,9 +150,9 @@ mark {
 }
 
 hr {
-		display: block;
-		//border: 1px inset;
-		margin: 1.06rem 0;
-		color: autoDarkenLighten($default, 20%);
-		//border: .06rem solid autoDarkenLighten($default, 20%);
+	display: block;
+	//border: 1px inset;
+	margin: 1.06rem 0;
+	color: autoDarkenLighten($default, 20%);
+	//border: .06rem solid autoDarkenLighten($default, 20%);
 }

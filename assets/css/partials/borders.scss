@@ -19,16 +19,16 @@
 	border-right: .06rem solid autoDarkenLighten($default, 30%) !important;
 }
 
-.border-separated>*:not(:last-child) {
+.border-separated > *:not(:last-child) {
 	border-right: .06rem solid autoDarkenLighten($default, 30%);
 	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
 }
 
-.border-separated-right>*:not(:last-child) {
+.border-separated-right > *:not(:last-child) {
 	border-right: .06rem solid autoDarkenLighten($default, 30%);
 }
 
-.border-separated-bottom>*:not(:last-child) {
+.border-separated-bottom > *:not(:last-child) {
 	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
 }
 

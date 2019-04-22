@@ -1,84 +1,85 @@
 .display-container {
 	position: relative;
 }
+
 .display-top-left {
-  position: absolute;
-  left: 0;
-  top: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 
 .display-top-center {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
 }
 
 .display-top-right {
-  position: absolute;
-  right: 0;
-  top: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .display-left {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0%, -50%);
-  -ms-transform: translate(-0%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(-0%, -50%);
 }
 
 .display-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
 }
 
 .display-right {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate(0%, -50%);
-  -ms-transform: translate(0%, -50%);
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(0%, -50%);
+	-ms-transform: translate(0%, -50%);
 }
 
 .display-bottom-left {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
 }
 
 .display-bottom-center {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
 }
 
 .display-bottom-right {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 
 .display-container:hover {
-  .display-hover {
-    display: block;
-  }
+	.display-hover {
+		display: block;
+	}
 
-  span.display-hover {
-    display: inline-block;
-  }
+	span.display-hover {
+		display: inline-block;
+	}
 }
 
 .display-hover {
-  display: none;
+	display: none;
 }
 
 .display-position {
-  position: absolute;
+	position: absolute;
 }
