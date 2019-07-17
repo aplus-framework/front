@@ -1,11 +1,11 @@
 {
 	"name": "framework/front",
 	"type": "library",
-	"description": "The Front package",
+	"description": "The Framework Front Library",
 	"keywords": [
 		"front"
 	],
-	"homepage": "https://gitlab.com/the-framework/front",
+	"homepage": "https://the-framework.gitlab.io/libraries/front.html",
 	"license": "proprietary",
 	"authors": [
 		{
@@ -15,9 +15,9 @@
 	],
 	"support": {
 		"email": "natanfelles@gmail.com",
-		"issues": "https://gitlab.com/the-framework/front/issues",
-		"wiki": "https://gitlab.com/the-framework/packages/front",
-		"source": "https://gitlab.com/the-framework/front",
-		"docs": "https://the-framework.gitlab.io/the-framework/packages/front/api"
+		"issues": "https://gitlab.com/the-framework/libraries/front/issues",
+		"wiki": "https://gitlab.com/the-framework/libraries/front/wikis/home",
+		"source": "https://gitlab.com/the-framework/libraries/front",
+		"docs": "https://the-framework.gitlab.io/libraries/front/docs/"
 	}
 }
