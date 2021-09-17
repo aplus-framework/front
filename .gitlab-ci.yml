@@ -7,7 +7,7 @@ cache:
     - node_modules/
 
 test:sass:
-  image: node:10.15
+  image: node:10.19
   stage: test
   before_script:
     - npm install -g sass
@@ -19,7 +19,7 @@ test:sass:
       - build
 
 test:jekyll:
-  image: ruby:2.5
+  image: ruby:2.7
   stage: test
   script:
     - bundle install --path vendor
