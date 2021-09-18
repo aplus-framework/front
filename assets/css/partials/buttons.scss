@@ -1,10 +1,10 @@
 /* Buttons */
 button,
 .btn {
-	border: .06rem autoDarkenLighten($default, 30%) solid;
-	border-radius: .26rem;
+	border: .05rem autoDarkenLighten($default, 30%) solid;
+	border-radius: .25rem;
 	display: inline-block;
-	padding: .53rem .8rem;
+	padding: $btn-pad-v $btn-pad-h;
 	vertical-align: middle;
 	overflow: hidden;
 	text-decoration: none;
