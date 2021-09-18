@@ -1,125 +1,19 @@
 /* Colors */
-.default {
-	@include colors($default);
-	border-color: autoDarkenLighten($default, 30%);
-}
-
-.default-hover:hover,
-button.default:hover,
-.btn.default:hover {
-	@include colorsHover($default);
-	border-color: autoDarkenLighten($default, 30%);
-}
-
-.text-default {
-	color: $default;
-}
-
-.border-default {
-	border-color: $default;
-}
-
-// Primary
-.primary {
-	@include colors($primary);
-	border-color: darken($primary, 30%);
-}
-
-.primary-hover:hover,
-button.primary:hover,
-.btn.primary:hover {
-	@include colorsHover($primary);
-	border-color: darken($primary, 30%);
-}
-
-.text-primary {
-	color: $primary;
-}
-
-.border-primary {
-	border-color: $primary;
-}
-
-// Info
-.info {
-	@include colors($info);
-	border-color: darken($info, 30%);
-}
-
-.info-hover:hover,
-button.info:hover,
-.btn.info:hover {
-	@include colorsHover($info);
-	border-color: darken($info, 30%);
-}
-
-.text-info {
-	color: $info;
-}
-
-.border-info {
-	border-color: $info;
-}
-
-// Success
-.success {
-	@include colors($success);
-	border-color: darken($success, 30%);
-}
-
-.success-hover:hover,
-button.success:hover,
-.btn.success:hover {
-	@include colorsHover($success);
-	border-color: darken($success, 30%);
-}
-
-.text-success {
-	color: $success;
-}
-
-.border-success {
-	border-color: $success;
-}
-
-// Warning
-.warning {
-	@include colors($warning);
-	border-color: darken($warning, 30%);
-}
-
-.warning-hover:hover,
-button.warning:hover,
-.btn.warning:hover {
-	@include colorsHover($warning);
-	border-color: darken($warning, 30%);
-}
-
-.text-warning {
-	color: $warning;
-}
-
-.border-warning {
-	border-color: $warning;
-}
-
-// Error
-.error {
-	@include colors($error);
-	border-color: darken($error, 30%);
-}
-
-.error-hover:hover,
-button.error:hover,
-.btn.error:hover {
-	@include colorsHover($error);
-	border-color: darken($error, 30%);
-}
-
-.text-error {
-	color: $error;
-}
-
-.border-error {
-	border-color: $error;
+@each $name, $color in $colors {
+  .#{$name} {
+    @include colors($color);
+    border-color: autoDarkenLighten($color, 30%);
+  }
+  .#{$name}-hover:hover,
+  button.#{$name}:hover,
+  .btn.#{$name}:hover {
+    @include colorsHover($color);
+    border-color: autoDarkenLighten($color, 30%);
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+  .border-#{$name} {
+    border-color: $color;
+  }
 }

@@ -12,3 +12,12 @@ $info: #2c8cff;
 $success: #47c06e;
 $warning: #cac215;
 $error: #ff3044;
+
+$colors: (
+  "default": $default,
+  "primary": $primary,
+  "error": $error,
+  "info": $info,
+  "success": $success,
+  "warning": $warning
+);
