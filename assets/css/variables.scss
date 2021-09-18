@@ -2,6 +2,14 @@ $font-family-sans: "DejaVu Sans", "Open Sans", Arial, Helvetica, sans-serif;
 $font-family-serif: "DejaVu Serif", serif;
 $font-family-mono: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
 //
+$font-size: 1rem;
+//
+$padding: $font-size * .25;
+$padding-1: $font-size * .5;
+$padding-2: $font-size * .75;
+$padding-3: $font-size;
+
+//
 $default: #fff;
 // $default: #202124;
 //$default: #141516;
@@ -12,7 +20,6 @@ $info: #2c8cff;
 $success: #47c06e;
 $warning: #cac215;
 $error: #ff3044;
-
 $colors: (
   "default": $default,
   "primary": $primary,
