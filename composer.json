@@ -1,24 +1,24 @@
 {
-	"name": "aplus/front",
-	"type": "library",
-	"description": "Aplus Framework Front Library",
-	"keywords": [
-		"front"
-	],
-	"homepage": "https://docs.aplus-framework.com/guides/libraries/front/",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Natan Felles",
-			"email": "natanfelles@gmail.com",
-			"homepage": "https://natanfelles.github.io"
-		}
-	],
-	"support": {
-		"email": "support@aplus-framework.com",
-		"issues": "https://gitlab.com/aplus-framework/libraries/front/issues",
-		"wiki": "https://gitlab.com/aplus-framework/libraries/front/wikis/home",
-		"source": "https://gitlab.com/aplus-framework/libraries/front",
-		"docs": "https://docs.aplus-framework.com/guides/libraries/front/"
-	}
+    "name": "aplus/front",
+    "type": "library",
+    "description": "Aplus Framework Front Library",
+    "keywords": [
+        "front"
+    ],
+    "homepage": "https://docs.aplus-framework.com/guides/libraries/front/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com",
+            "homepage": "https://natanfelles.github.io"
+        }
+    ],
+    "support": {
+        "email": "support@aplus-framework.com",
+        "issues": "https://gitlab.com/aplus-framework/libraries/front/issues",
+        "wiki": "https://gitlab.com/aplus-framework/libraries/front/wikis/home",
+        "source": "https://gitlab.com/aplus-framework/libraries/front",
+        "docs": "https://docs.aplus-framework.com/guides/libraries/front/"
+    }
 }

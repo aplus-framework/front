@@ -1,29 +1,25 @@
 @function em($pixels, $context: $font-size) {
-	@if (unitless($pixels)) {
-		$pixels: $pixels * 1px;
-	}
-
-	@if (unitless($context)) {
-		$context: $context * 1px;
-	}
-
-	@return $pixels / $context * 1em;
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1em;
 }
 
 @function highlight($color, $amount: 20%, $threshold: 50%) {
-	@if lightness($color)>$threshold {
-		@return darken($color, $amount);
-	}
-
-	@return lighten($color, $amount);
+  @if lightness($color)>$threshold {
+    @return darken($color, $amount);
+  }
+  @return lighten($color, $amount);
 }
 
 @function color($color, $amount: 80%) {
-	@if lightness($color)>60 {
-		@return darken(#fff, $amount);
-	}
-
-	@return lighten(#000, $amount);
+  @if lightness($color)>60 {
+    @return darken(#fff, $amount);
+  }
+  @return lighten(#000, $amount);
 }
 
 // Calculates the sRGB luma of a colour.
@@ -31,11 +27,10 @@
 // http://robots.thoughtbot.com/closer-look-color-lightness
 // @see https://lnikki.la/articles/sass-better-colour-based-on-brightness
 @function luma($c) {
-	$-local-red: red(rgba($c, 1.0));
-	$-local-green: green(rgba($c, 1.0));
-	$-local-blue: blue(rgba($c, 1.0));
-
-	@return (0.2126 * $-local-red + 0.7152 * $-local-green + 0.0722 * $-local-blue) / 255;
+  $-local-red: red(rgba($c, 1.0));
+  $-local-green: green(rgba($c, 1.0));
+  $-local-blue: blue(rgba($c, 1.0));
+  @return (0.2126 * $-local-red + 0.7152 * $-local-green + 0.0722 * $-local-blue) / 255;
 }
 
 // Picks a colour from two options based on which one is more visible
@@ -43,48 +38,44 @@
 // Usage: pick-visible-color($bg-color, $color-1, $color-2)
 // @see https://lnikki.la/articles/sass-better-colour-based-on-brightness
 @function pick-visible-color($bg, $c1, $c2) {
-	$bg-luma: luma($bg);
-	$c1-luma: luma($c1);
-	$c2-luma: luma($c2);
-	$c1-diff: abs($bg-luma - $c1-luma);
-	$c2-diff: abs($bg-luma - $c2-luma);
-
-	@if $c1-diff>$c2-diff {
-		@return $c1;
-	}
-
-	@return $c2;
+  $bg-luma: luma($bg);
+  $c1-luma: luma($c1);
+  $c2-luma: luma($c2);
+  $c1-diff: abs($bg-luma - $c1-luma);
+  $c2-diff: abs($bg-luma - $c2-luma);
+  @if $c1-diff>$c2-diff {
+    @return $c1;
+  }
+  @return $c2;
 }
 
 @function autoDarkenLighten($color, $amount: 25%) {
-	@if pick-visible-color($color, black, white) == black {
-		@return darken($color, $amount);
-	}
-
-	@return lighten($color, $amount);
+  @if pick-visible-color($color, black, white) == black {
+    @return darken($color, $amount);
+  }
+  @return lighten($color, $amount);
 }
 
 @function darkLight($color, $dark: 25%, $light: 25%) {
-	@if pick-visible-color($color, black, white) == black {
-		@return darken($color, $light);
-	}
-
-	@return lighten($color, $dark);
+  @if pick-visible-color($color, black, white) == black {
+    @return darken($color, $light);
+  }
+  @return lighten($color, $dark);
 }
 
 @mixin colors($background) {
-	color: pick-visible-color($background, #000, #fff);
-	background-color: $background;
-	//border-color: darken($background, 30%);
+  color: pick-visible-color($background, #000, #fff);
+  background-color: $background;
+  //border-color: darken($background, 30%);
 }
 
 @mixin colorsHover($background) {
-	@include colors(autoDarkenLighten($background, 6%));
+  @include colors(autoDarkenLighten($background, 6%));
 }
 
 // @see https://lnikki.la/articles/night-mode-css-filter/
 // TODO: maybe move to and css class only
 @mixin filter-invert() {
-	-webkit-filter: invert(1) hue-rotate(180deg);
-	filter: invert(1) hue-rotate(180deg);
+  -webkit-filter: invert(1) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
 }

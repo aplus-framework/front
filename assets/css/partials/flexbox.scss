@@ -1,211 +1,210 @@
 /* Flexbox */
 .row,
 .row-padding {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .column {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .row.reverse {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .column.reverse {
-	flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .container {
-	padding: .016rem 1.06rem;
+  padding: .016rem 1.06rem;
 }
 
 .row-padding > *,
 .column-padding > *,
 .box-padding {
-	padding: .26rem !important;
+  padding: .26rem !important;
 }
 
 .row-margin > *,
 .column-margin > *,
 .box-margin {
-	margin: .26rem !important;
+  margin: .26rem !important;
 }
 
 .box,
 .row > *,
 .column > * {
-	flex-grow: 1;
-	flex-shrink: 1;
-	flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
 }
 
 /* .box, */
 .box-1 {
-	flex: 0 0 calc(100% / 12);
+  flex: 0 0 calc(100% / 12);
 }
 
 .box-2 {
-	flex: 0 0 calc(100% / 12 * 2);
+  flex: 0 0 calc(100% / 12 * 2);
 }
 
 .box-3 {
-	flex: 0 0 calc(100% / 12 * 3);
+  flex: 0 0 calc(100% / 12 * 3);
 }
 
 .box-4 {
-	flex: 0 0 calc(100% / 12 * 4);
+  flex: 0 0 calc(100% / 12 * 4);
 }
 
 .box-5 {
-	flex: 0 0 calc(100% / 12 * 5);
+  flex: 0 0 calc(100% / 12 * 5);
 }
 
 .box-6 {
-	flex: 0 0 calc(100% / 12 * 6);
+  flex: 0 0 calc(100% / 12 * 6);
 }
 
 .box-7 {
-	flex: 0 0 calc(100% / 12 * 7);
+  flex: 0 0 calc(100% / 12 * 7);
 }
 
 .box-8 {
-	flex: 0 0 calc(100% / 12 * 8);
+  flex: 0 0 calc(100% / 12 * 8);
 }
 
 .box-9 {
-	flex: 0 0 calc(100% / 12 * 9);
+  flex: 0 0 calc(100% / 12 * 9);
 }
 
 .box-10 {
-	flex: 0 0 calc(100% / 12 * 10);
+  flex: 0 0 calc(100% / 12 * 10);
 }
 
 .box-11 {
-	flex: 0 0 calc(100% / 12 * 11);
+  flex: 0 0 calc(100% / 12 * 11);
 }
 
 .box-12 {
-	flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .box-start {
-	align-self: flex-start;
+  align-self: flex-start;
 }
 
 .box-end {
-	align-self: flex-end;
+  align-self: flex-end;
 }
 
 .box-center {
-	align-self: center;
+  align-self: center;
 }
 
 .box-baseline {
-	align-self: baseline;
+  align-self: baseline;
 }
 
 .box-stretch {
-	align-self: stretch;
+  align-self: stretch;
 }
 
 // TODO - prefix box- where are box classes
 .align-content-start {
-	align-content: flex-start;
+  align-content: flex-start;
 }
 
 .align-content-end {
-	align-content: flex-end;
+  align-content: flex-end;
 }
 
 .align-content-center {
-	align-content: center;
+  align-content: center;
 }
 
 .align-content-stretch {
-	align-content: stretch;
+  align-content: stretch;
 }
 
 .align-content-space-between {
-	align-content: space-between;
+  align-content: space-between;
 }
 
 .align-content-space-around {
-	align-content: space-around;
+  align-content: space-around;
 }
 
 .align-items-start {
-	align-items: flex-start;
+  align-items: flex-start;
 }
 
 .align-items-end {
-	align-items: flex-end;
+  align-items: flex-end;
 }
 
 .align-items-center {
-	align-items: center;
+  align-items: center;
 }
 
 .align-items-baseline {
-	align-items: baseline;
+  align-items: baseline;
 }
 
 .align-items-stretch {
-	align-items: stretch;
+  align-items: stretch;
 }
 
 .justify-content-start {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 .justify-content-end {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .justify-content-center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .justify-content-space-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-content-space-around {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
-
-	.row,
-	.column,
-	.box,
-	.box-1,
-	.box-2,
-	.box-3,
-	.box-4,
-	.box-5,
-	.box-6,
-	.box-7,
-	.box-8,
-	.box-9,
-	.box-10,
-	.box-11,
-	.box-12 {
-		min-width: 100%;
-		width: 100%;
-		flex-basis: 100%;
-		display: block;
-	}
+  .row,
+  .column,
+  .box,
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6,
+  .box-7,
+  .box-8,
+  .box-9,
+  .box-10,
+  .box-11,
+  .box-12 {
+    min-width: 100%;
+    width: 100%;
+    flex-basis: 100%;
+    display: block;
+  }
 }
 
 .display-flex {
-	display: flex;
+  display: flex;
 }
 
 .display-flex > * {
-	flex: 1;
+  flex: 1;
 }

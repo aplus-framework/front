@@ -6,50 +6,50 @@ layout: null
 <html>
 
 <head>
-	<title>Flex</title>
-	<style>
-		.flexbox {
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			overflow: hidden;
-			background: green;
-		}
+    <title>Flex</title>
+    <style>
+        .flexbox {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            overflow: hidden;
+            background: green;
+        }
 
-		.flexbox .col {
-			flex: 1;
-			flex-grow: 0;
-			flex-shrink: 0;
-			flex-basis: 8.33333%;
-			background: blue;
-		}
+        .flexbox .col {
+            flex: 1;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 8.33333%;
+            background: blue;
+        }
 
-		.flexbox .col-2 {
-			flex: 2;
-			flex-grow: 0;
-			flex-shrink: 0;
-			flex-basis: 16.66666%;
-			background: red;
-		}
+        .flexbox .col-2 {
+            flex: 2;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 16.66666%;
+            background: red;
+        }
 
-	</style>
+    </style>
 </head>
 
 <body>
-	<div class="flexbox">
-		<div class="col">
-			<h3>I am listed first in source order.</h3>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-		</div>
-		<div class="col-2">
-			<h3>I am listed first in source order.</h3>
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-		</div>
-		<!--
-		<div class="col-2">
-			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-		</div> -->
-	</div>
+<div class="flexbox">
+    <div class="col">
+        <h3>I am listed first in source order.</h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+    <div class="col-2">
+        <h3>I am listed first in source order.</h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+    <!--
+    <div class="col-2">
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+    </div> -->
+</div>
 </body>
 
 </html>

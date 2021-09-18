@@ -1,75 +1,73 @@
 /* Buttons */
 button,
 .btn {
-	border: .05rem autoDarkenLighten($default, 30%) solid;
-	border-radius: .25rem;
-	display: inline-block;
-	padding: $btn-pad-v $btn-pad-h;
-	vertical-align: middle;
-	overflow: hidden;
-	text-decoration: none;
-	//color: $text-default;
-	//background-color: highlight($default, 2%);
-	text-align: center;
-	cursor: pointer;
-	white-space: nowrap;
-	@include colors(autoDarkenLighten($default, 2%));
-	transition: .3s;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+  border: $border-width autoDarkenLighten($default, 30%) solid;
+  border-radius: $border-radius;
+  display: inline-block;
+  padding: $btn-pad-v $btn-pad-h;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  //color: $text-default;
+  //background-color: highlight($default, 2%);
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  @include colors(autoDarkenLighten($default, 2%));
+  transition: .3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-	&:hover {
-		@include colorsHover(autoDarkenLighten($default, 2%));
-		border-color: autoDarkenLighten($default, 30%);
-		text-decoration: none;
-	}
+  &:hover {
+    @include colorsHover(autoDarkenLighten($default, 2%));
+    border-color: autoDarkenLighten($default, 30%);
+    text-decoration: none;
+  }
 
-	&:focus,
-	&:active,
-	&.active {
-		box-shadow: inset 0 3px 5px rgba(0, 0, 0, .25);
-	}
+  &:focus,
+  &:active,
+  &.active {
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .25);
+  }
 
-	&:active,
-	&:not(.disabled),
-	&:not(:disabled) {
-		transform: translateY(1px);
-	}
+  &:active,
+  &:not(.disabled),
+  &:not(:disabled) {
+    transform: translateY(1px);
+  }
 
-	&:disabled,
-	.disabled {
-		cursor: not-allowed;
-		opacity: .4;
-		box-shadow: none !important;
-	}
+  &:disabled,
+  .disabled {
+    cursor: not-allowed;
+    opacity: .4;
+    box-shadow: none !important;
+  }
 
-	&.shadow {
-		&.disabled:hover,
-		&:disabled:hover {
-			box-shadow: none;
-		}
-	}
+  &.shadow {
+    &.disabled:hover,
+    &:disabled:hover {
+      box-shadow: none;
+    }
+  }
 
-	> * {
-		vertical-align: middle;
-	}
+  > * {
+    vertical-align: middle;
+  }
 }
 
 // button > *,
 // .btn > * {
 // 	vertical-align: middle;
 // }
-
 // button:hover,
 // .btn:hover {
 // 	@include colorsHover(autoDarkenLighten($default, 2%));
 // 	border-color: autoDarkenLighten($default, 30%);
 // 	text-decoration: none;
 // }
-
 // button:focus,
 // button.active,
 // button:active,
@@ -78,7 +76,6 @@ button,
 // .btn:active {
 // 	box-shadow: inset 0 3px 5px rgba(0,0,0,.25);
 // }
-
 // button:active,
 // .btn:active,
 // button:not(.disabled),
@@ -87,7 +84,6 @@ button,
 // .btn:not(:disabled) {
 //   transform: translateY(1px);
 // }
-
 // button:disabled,
 // .btn:disabled,
 // .disabled {
@@ -95,10 +91,9 @@ button,
 // 	opacity: .4;
 // 	box-shadow: none !important;
 // }
-
 .disabled *,
 :disabled * {
-	pointer-events: none;
+  pointer-events: none;
 }
 
 // button.shadow,
@@ -108,17 +103,16 @@ button,
 // 		box-shadow: none;
 // 	}
 // }
-
 .badge,
 .tag {
-	background-color: #000;
-	color: #fff;
-	display: inline-block;
-	padding-left: .53rem;
-	padding-right: .53rem;
-	text-align: center;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: .53rem;
+  padding-right: .53rem;
+  text-align: center;
 }
 
 .badge {
-	border-radius: 50%;
+  border-radius: 50%;
 }

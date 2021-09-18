@@ -1,24 +1,24 @@
 /* Rounds */
-.round {
-	border-radius: .26rem;
+.rad {
+  border-radius: $border-radius;
 }
 
-.round-x {
-	border-radius: .53rem;
+.rad-1 {
+  border-radius: $border-radius * 2;
 }
 
-.round-xx {
-	border-radius: 1.06rem;
+.rad-2 {
+  border-radius: $border-radius * 4;
 }
 
-.round-xxx {
-	border-radius: 2.13rem;
+.rad-3 {
+  border-radius: $border-radius * 6;
 }
 
 .circle {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
-.no-round {
-	border-radius: 0;
+.no-rad {
+  border-radius: 0;
 }

@@ -1,31 +1,39 @@
 /* Groups */
 .group {
-	display: flex !important;
+  display: flex !important;
 }
 
 .group > * {
-	flex: 1 !important;
-	// margin: 0 !important;
-	// TODO: input needs margin-top: 1px; -- added on forms.scss, maybe here is better
+  flex: 1 !important;
+  // margin: 0 !important;
+  // TODO: input needs margin-top: 1px; -- added on forms.scss, maybe here is better
 }
 
 .group > *:not(:first-child) {
-	border-top-left-radius: 0 !important;
-	border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
 .group > *:not(:last-child) {
-	border-top-right-radius: 0 !important;
-	border-bottom-right-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
 }
 
 //  @media (min-width: 40.06rem) {
 // 	.group {
 // 		display: flex !important;
 // 	}
-
 // 	.group>* {
 // 		display: inline-block !important;
 // 		width: auto !important;
 // 	}
 // }
+.group {
+  .btn, button {
+    border-right-width: 0;
+  }
+
+  .btn:last-child, button:last-child {
+    border-right-width: $border-width;
+  }
+}

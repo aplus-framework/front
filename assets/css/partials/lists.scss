@@ -2,32 +2,29 @@
 // ul, ol {
 // 	padding: 0 1rem;
 // }
-
 // ul {
 // 	list-style: disc;
 // }
-
 // ol {
 // 	list-style: decimal;
 // }
-
 .list {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 
-	> * {
-		display: block;
-		padding: .53rem 1.06rem;
-		border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+  > * {
+    display: block;
+    padding: .53rem 1.06rem;
+    border-bottom: .06rem solid autoDarkenLighten($default, 30%);
 
-		&:last-child {
-			border-bottom: none;
-		}
-	}
+    &:last-child {
+      border-bottom: none;
+    }
+  }
 
-	> a:hover {
-		background-color: autoDarkenLighten($default, 6%);
-		text-decoration: none;
-	}
+  > a:hover {
+    background-color: autoDarkenLighten($default, 6%);
+    text-decoration: none;
+  }
 }

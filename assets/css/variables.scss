@@ -17,6 +17,16 @@ $padding-3: $font-size;
 $btn-pad-v: $padding-1;
 $btn-pad-h: $padding-2;
 //
+$h-margin-v: $margin-1;
+$h-margin-h: 0;
+//
+$p-margin-t: $margin-3;
+//
+$border-width: $font-size * 0.05;
+$border-bar-width: $padding-1;
+//
+$border-radius: $font-size * .25;
+//
 $default: #fff;
 // $default: #202124;
 //$default: #141516;
@@ -27,6 +37,7 @@ $info: #2c8cff;
 $success: #47c06e;
 $warning: #cac215;
 $error: #ff3044;
+//
 $colors: (
   "default": $default,
   "primary": $primary,

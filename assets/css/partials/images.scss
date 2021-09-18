@@ -1,48 +1,48 @@
 /* Images */
 img {
-	vertical-align: middle;
-	border-style: none;
-	max-width: 100%;
-	height: auto;
+  vertical-align: middle;
+  border-style: none;
+  max-width: 100%;
+  height: auto;
 }
 
 .grayscale {
-	filter: grayscale(75%);
+  filter: grayscale(75%);
 }
 
 .grayscale-max,
 .grayscale-hover:hover {
-	filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .grayscale-min {
-	filter: grayscale(50%);
+  filter: grayscale(50%);
 }
 
 .sepia {
-	filter: sepia(75%);
+  filter: sepia(75%);
 }
 
 .sepia-max,
 .sepia-hover:hover {
-	filter: sepia(100%);
+  filter: sepia(100%);
 }
 
 .sepia-min {
-	filter: sepia(50%);
+  filter: sepia(50%);
 }
 
 .blur {
-	filter: blur(.3rem);
+  filter: blur(.3rem);
 }
 
 .blur-max,
 .blur-hover:hover {
-	filter: blur(.6rem);
+  filter: blur(.6rem);
 }
 
 .blur-min {
-	filter: blur(.1rem);
+  filter: blur(.1rem);
 }
 
 
