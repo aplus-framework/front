@@ -4,6 +4,11 @@ $font-family-mono: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
 //
 $font-size: 1rem;
 //
+$margin: $font-size * .25;
+$margin-1: $font-size * .5;
+$margin-2: $font-size * .75;
+$margin-3: $font-size;
+//
 $padding: $font-size * .25;
 $padding-1: $font-size * .5;
 $padding-2: $font-size * .75;

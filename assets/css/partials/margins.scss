@@ -1,60 +1,80 @@
 /* Margins */
-.margin {
-	margin: 1.06rem !important;
+.mar {
+  margin: $margin !important;
 }
 
-.margin-x {
-	margin: 2.13rem !important;
+.mar-1 {
+  margin: $margin-1 !important;
 }
 
-.margin-xx {
-	margin: 3.2rem !important;
+.mar-2 {
+  margin: $margin-2 !important;
 }
 
-.margin-top {
-	margin-top: 1.06rem !important;
+.mar-3 {
+  margin: $margin-3 !important;
 }
 
-.margin-top-x {
-	margin-top: 2.13rem !important;
+.mar-t {
+  margin-top: $margin !important;
 }
 
-.margin-top-xx {
-	margin-top: 3.2rem !important;
+.mar-t-1 {
+  margin-top: $margin-1 !important;
 }
 
-.margin-bottom {
-	margin-bottom: 1.06rem !important;
+.mar-t-2 {
+  margin-top: $margin-2 !important;
 }
 
-.margin-bottom-x {
-	margin-bottom: 2.13rem !important;
+.mar-t-3 {
+  margin-top: $margin-3 !important;
 }
 
-.margin-bottom-xx {
-	margin-bottom: 3.2rem !important;
+.mar-b {
+  margin-bottom: $margin !important;
 }
 
-.margin-left {
-	margin-left: 1.06rem !important;
+.mar-b-1 {
+  margin-bottom: $margin-1 !important;
 }
 
-.margin-left-x {
-	margin-left: 2.13rem !important;
+.mar-b-2 {
+  margin-bottom: $margin-2 !important;
 }
 
-.margin-left-xx {
-	margin-left: 3.2rem !important;
+.mar-b-3 {
+  margin-bottom: $margin-3 !important;
 }
 
-.margin-right {
-	margin-right: 1.06rem !important;
+.mar-l {
+  margin-left: $margin !important;
 }
 
-.margin-right-x {
-	margin-right: 2.13rem !important;
+.mar-l-1 {
+  margin-left: $margin-1 !important;
 }
 
-.margin-right-xx {
-	margin-right: 3.2rem !important;
+.mar-l-2 {
+  margin-left: $margin-2 !important;
+}
+
+.mar-l-3 {
+  margin-left: $margin-3 !important;
+}
+
+.mar-r {
+  margin-right: $margin !important;
+}
+
+.mar-r-1 {
+  margin-right: $margin-1 !important;
+}
+
+.mar-r-2 {
+  margin-right: $margin-2 !important;
+}
+
+.mar-r-3 {
+  margin-right: $margin-3 !important;
 }
