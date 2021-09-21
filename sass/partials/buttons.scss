@@ -1,24 +1,26 @@
 /* Buttons */
+$button-border: $border-width autoDarkenLighten($default, 30%) solid !default;
+$button-border-radius: $border-radius !default;
+$button-font-family: $font-family-sans !default;
+$button-padding: $padding-1 $padding-2 !default;
+//$button-box-shadow-focus: inset 0 3px 5px rgba(0, 0, 0, .25) !default;
+$button-box-shadow-focus: inset 0 3px 5px rgba(darkLight($default, 90%, 60%), .3) !default;
+
 button,
 .btn {
-  border: $border-width autoDarkenLighten($default, 30%) solid;
-  border-radius: $border-radius;
+  border: $button-border;
+  border-radius: $button-border-radius;
   display: inline-block;
-  padding: $btn-pad-v $btn-pad-h;
+  font-family: $button-font-family;
+  padding: $button-padding;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
-  //color: $text-default;
-  //background-color: highlight($default, 2%);
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
   @include colors(autoDarkenLighten($default, 2%));
   transition: .3s;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 
   &:hover {
@@ -30,7 +32,7 @@ button,
   &:focus,
   &:active,
   &.active {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .25);
+    box-shadow: $button-box-shadow-focus;
   }
 
   &:active,

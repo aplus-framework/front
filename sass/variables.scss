@@ -3,6 +3,7 @@ $font-family-serif: "DejaVu Serif", serif;
 $font-family-mono: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
 //
 $font-size: 1rem;
+$line-height: 1.5;
 //
 $margin: $font-size * .25;
 $margin-1: $font-size * .5;
@@ -13,9 +14,6 @@ $padding: $font-size * .25;
 $padding-1: $font-size * .5;
 $padding-2: $font-size * .75;
 $padding-3: $font-size;
-//
-$btn-pad-v: $padding-1;
-$btn-pad-h: $padding-2;
 //
 $h-margin-v: $margin-1;
 $h-margin-h: 0;

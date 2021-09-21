@@ -1,22 +1,29 @@
 /* Forms */
+$input-padding: $padding-1 $padding-2 !default;
+$input-border: $border-width solid autoDarkenLighten($default, 50%) !default;
+$input-border-radius: $border-radius !default;
+$input-box-shadow: inset 0 ($font-size * .2) ($font-size * .2) rgba(darkLight($default, 30%, 20%), .3) !default;
+$input-box-shadow-focus: 0 0 0 ($font-size * .2) rgba(darkLight($primary, 30%, 20%), .3) !default;
+//
 input,
 select,
 textarea {
-  padding: $btn-pad-v $btn-pad-h;
-  margin-top: .05rem;
+  padding: $input-padding;
+  //margin-top: .05rem;
   display: block;
-  border: .05rem solid autoDarkenLighten($default, 50%);
-  border-radius: $border-radius;
+  border: $input-border;
+  border-radius: $input-border-radius;
   width: 100%;
   color: autoDarkenLighten($default, 80%);
   background-color: darkLight($default, 10%, 1%);
   transition: .3s;
-  // box-shadow: inset 0 2px 2px rgba(0,0,0,.05);
+  box-shadow: $input-box-shadow;
+
   &:focus {
     border-color: $primary;
     background-color: darkLight($default, 15%, 3%);
     outline: 0;
-    //box-shadow: 0 0 0 .2rem rgba(darkLight($primary, 30%, 20%), .3);
+    box-shadow: $input-box-shadow-focus;
   }
 }
 
@@ -28,25 +35,12 @@ textarea {
 // // 	background-position: right .7em top 50%, 0 0;
 // // 	background-size: .65em auto, 100%;
 // }
-input:focus,
-select:focus,
-textarea:focus {
-  border-color: $primary;
-  background-color: darkLight($default, 15%, 3%);
-  outline: 0;
-  //box-shadow: 0 0 0 .2rem rgba(darkLight($primary, 30%, 20%), .3);
-}
-
 [type=checkbox],
 [type=radio] {
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  vertical-align: middle;
-}
-
-[type=checkbox] {
-  margin-top: -.05rem;
+  width: $font-size;
+  height: $font-size;
+  vertical-align: top;
+  margin-top: ($line-height - $font-size) * .5;
 }
 
 label {
@@ -55,13 +49,13 @@ label {
 }
 
 legend {
-  border: .05rem solid autoDarkenLighten($default, 30%);
-  padding: $btn-pad-v $btn-pad-h;
+  border: $border-width solid autoDarkenLighten($default, 30%);
+  padding: $padding-1 $padding-2;
 }
 
 fieldset {
-  border: .05rem solid autoDarkenLighten($default, 30%);
-  padding: $btn-pad-h;
+  border: $border-width solid autoDarkenLighten($default, 30%);
+  padding: $padding-1;
 
   &:not(:first-child) {
     margin-top: 1.05rem;
