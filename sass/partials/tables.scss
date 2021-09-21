@@ -40,12 +40,6 @@ table,
   }
 }
 
-// table,
-// .table {
-//   tr {
-//   	transition: .3s;
-//   }
-// }
 .table,
 .table-bordered,
 .table-all {
@@ -60,18 +54,6 @@ table,
   }
 }
 
-// .table-bordered,
-// .table {
-//   tr {
-//   	border-bottom: .06rem solid autoDarkenLighten($default, 30%);
-//   }
-// }
-// .table-bordered,
-// .table {
-//   thead tr {
-//   	border-bottom: .13rem solid autoDarkenLighten($default, 30%);
-//   }
-// }
 .table-bordered,
 .table-all {
   td, th {
@@ -89,8 +71,7 @@ table,
 }
 
 .table-hoverable tbody tr:hover,
-.table-all tbody tr:hover,
-.list.table-hoverable li:hover {
+.table-all tbody tr:hover {
   background-color: autoDarkenLighten($default, 15%);
   color: autoDarkenLighten(
       autoDarkenLighten($default, 15%), 80%
@@ -103,26 +84,3 @@ table,
     text-align: center;
   }
 }
-
-// table,
-// .table {
-//   td,
-//   th {
-//     padding: .53rem .53rem;
-//     display: table-cell;
-//     text-align: left;
-//     vertical-align: top;
-//   }
-// }
-// table,
-// .table {
-//   th:first-child,
-//   td:first-child {
-//     padding-left: 1.06rem;
-//   }
-// }
-// table th,
-// .table  th {
-// 	font-weight: bold;
-// }
-// TODO: .table.table-bordered.table-hoverable = .table-all
