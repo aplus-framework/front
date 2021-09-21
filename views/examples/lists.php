@@ -56,18 +56,54 @@ $view->block('contents');
         <li>abcd 123</li>
     </ol>
     <hr>
+    <ul class="list">
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+    </ul>
+    <hr>
+    <ul class="list hoverable">
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+        <li>abcd 123</li>
+    </ul>
+    <hr>
     <ul class="list border">
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
     </ul>
-    <ol class="list table-hoverable border margin-top">
+    <hr>
+    <ol class="list hoverable border">
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
     </ol>
+    <hr>
+    <div class="list">
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+    </div>
+    <hr>
+    <div class="list border">
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+    </div>
+    <hr>
+    <div class="list hoverable border">
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+    </div>
 
     <hr>
 

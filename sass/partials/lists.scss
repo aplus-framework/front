@@ -1,13 +1,20 @@
+$list-padding: 0 $font-size !default;
+$list-ul-style: disc !default;
+$list-ol-style: decimal !default;
+$list-list-padding: $padding-1 $padding-3 !default;
 /* Lists */
-// ul, ol {
-// 	padding: 0 1rem;
-// }
-// ul {
-// 	list-style: disc;
-// }
-// ol {
-// 	list-style: decimal;
-// }
+ul, ol {
+  padding: $list-padding;
+}
+
+ul {
+  list-style: $list-ul-style;
+}
+
+ol {
+  list-style: $list-ol-style;
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -15,8 +22,8 @@
 
   > * {
     display: block;
-    padding: .53rem 1.06rem;
-    border-bottom: .06rem solid autoDarkenLighten($default, 30%);
+    padding: $list-list-padding;
+    border-bottom: $border-width solid autoDarkenLighten($default, 30%);
 
     &:last-child {
       border-bottom: none;
@@ -24,7 +31,6 @@
   }
 
   > a:hover {
-    background-color: autoDarkenLighten($default, 6%);
     text-decoration: none;
   }
 }

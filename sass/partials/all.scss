@@ -134,6 +134,12 @@ html {
   }
 }
 
+.hoverable {
+  > *:hover {
+    background-color: autoDarkenLighten($default, 15%);
+  }
+}
+
 .overlay {
   position: fixed;
   display: none;

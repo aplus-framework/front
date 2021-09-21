@@ -10,6 +10,9 @@ $view->block('contents');
             <a href="/examples/buttons.html">buttons</a>
         </li>
         <li>
+            <a href="/examples/lists.html">lists</a>
+        </li>
+        <li>
             <a href="/examples/forms.html">forms</a>
         </li>
     </ul>
