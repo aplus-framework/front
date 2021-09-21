@@ -17,7 +17,7 @@ if ( ! file_exists(BUILD_DIR)) {
 }
 
 $theme = 'front';
-$version = '2.0.0';
+$version = 'dev';
 
 $scss = new Compiler([
     'cacheDir' => $cacheDir,
