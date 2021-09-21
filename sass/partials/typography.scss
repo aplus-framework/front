@@ -1,3 +1,6 @@
+$heading-margin: $margin-1 0 !default;
+$p-margin-top: $margin-3 !default;
+$hr-margin: $p-margin-top 0 !default;
 /* Typography */
 h1 {
   font-size: $font-size * 2.5;
@@ -30,7 +33,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  margin: $h-margin-v $h-margin-h;
+  margin: $heading-margin;
   color: pick-visible-color($default, darken($default, 85%), lighten($default, 85%));
 }
 
@@ -50,7 +53,7 @@ p {
 }
 
 p + p {
-  margin-top: $p-margin-t;
+  margin-top: $p-margin-top;
 }
 
 .serif {
@@ -112,26 +115,25 @@ p + p {
 pre,
 code {
   font-family: $font-family-mono;
-  font-size: $font-size * 1.05;
+  font-size: $font-size;
 }
 
 pre {
   width: auto;
   background-color: autoDarkenLighten($default, 10%);
   padding: $padding-1 $padding-2;
-  border: .05rem solid autoDarkenLighten($default, 30%);
+  border: $border-width solid autoDarkenLighten($default, 30%);
   // border-left: .26rem solid autoDarkenLighten($primary, 5%);
-  word-wrap: break-word;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
+  //word-wrap: break-word;
   tab-size: 4;
+  overflow: auto;
 }
 
 .section,
 section + section,
 pre {
-  margin-top: $p-margin-t !important;
-  margin-bottom: $p-margin-t !important;
+  margin-top: $p-margin-top !important;
+  margin-bottom: $p-margin-top !important;
 }
 
 :not(pre) > code {
@@ -152,7 +154,7 @@ mark {
 hr {
   display: block;
   //border: 1px inset;
-  margin: $p-margin-t 0;
+  margin: $hr-margin;
   color: autoDarkenLighten($default, 20%);
   //border: .06rem solid autoDarkenLighten($default, 20%);
 }

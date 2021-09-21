@@ -15,6 +15,9 @@ $view->block('contents');
         <li>
             <a href="/examples/forms.html">forms</a>
         </li>
+        <li>
+            <a href="/examples/typography.html">typography</a>
+        </li>
     </ul>
 <?php
 $view->endBlock();
