@@ -13,6 +13,9 @@ $view->block('contents');
             <a href="/examples/lists.html">lists</a>
         </li>
         <li>
+            <a href="/examples/flexbox.html">flexbox</a>
+        </li>
+        <li>
             <a href="/examples/forms.html">forms</a>
         </li>
         <li>

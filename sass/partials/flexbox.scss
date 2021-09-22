@@ -21,19 +21,19 @@
 }
 
 .container {
-  padding: .016rem 1.06rem;
+  padding: 0 $padding-3;
 }
 
 .row-padding > *,
 .column-padding > *,
 .box-padding {
-  padding: .26rem !important;
+  padding: $padding !important;
 }
 
 .row-margin > *,
 .column-margin > *,
 .box-margin {
-  margin: .26rem !important;
+  margin: $margin !important;
 }
 
 .box,
@@ -45,52 +45,11 @@
 }
 
 /* .box, */
-.box-1 {
-  flex: 0 0 calc(100% / 12);
-}
-
-.box-2 {
-  flex: 0 0 calc(100% / 12 * 2);
-}
-
-.box-3 {
-  flex: 0 0 calc(100% / 12 * 3);
-}
-
-.box-4 {
-  flex: 0 0 calc(100% / 12 * 4);
-}
-
-.box-5 {
-  flex: 0 0 calc(100% / 12 * 5);
-}
-
-.box-6 {
-  flex: 0 0 calc(100% / 12 * 6);
-}
-
-.box-7 {
-  flex: 0 0 calc(100% / 12 * 7);
-}
-
-.box-8 {
-  flex: 0 0 calc(100% / 12 * 8);
-}
-
-.box-9 {
-  flex: 0 0 calc(100% / 12 * 9);
-}
-
-.box-10 {
-  flex: 0 0 calc(100% / 12 * 10);
-}
-
-.box-11 {
-  flex: 0 0 calc(100% / 12 * 11);
-}
-
-.box-12 {
-  flex: 0 0 100%;
+$box-length: 12 !default;
+@for $i from 1 through $box-length {
+  .box-#{$i} {
+    flex: 0 0 (100% / $box-length * $i);
+  }
 }
 
 .box-start {
@@ -203,8 +162,8 @@
 
 .display-flex {
   display: flex;
-}
 
-.display-flex > * {
-  flex: 1;
+  > * {
+    flex: 1;
+  }
 }
