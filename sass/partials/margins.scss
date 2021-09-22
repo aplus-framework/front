@@ -1,80 +1,105 @@
 /* Margins */
-.mar {
-  margin: $margin !important;
-}
-
+.mar,
 .mar-1 {
-  margin: $margin-1 !important;
+  margin: $margin-025 !important;
 }
 
 .mar-2 {
-  margin: $margin-2 !important;
+  margin: $margin-050 !important;
 }
 
 .mar-3 {
-  margin: $margin-3 !important;
+  margin: $margin-075 !important;
 }
 
-.mar-t {
-  margin-top: $margin !important;
+.mar-4 {
+  margin: $margin-100 !important;
 }
 
+.mar-8 {
+  margin: $margin-200 !important;
+}
+
+.mar-t,
 .mar-t-1 {
-  margin-top: $margin-1 !important;
+  margin-top: $margin-025 !important;
 }
 
 .mar-t-2 {
-  margin-top: $margin-2 !important;
+  margin-top: $margin-050 !important;
 }
 
 .mar-t-3 {
-  margin-top: $margin-3 !important;
+  margin-top: $margin-075 !important;
 }
 
-.mar-b {
-  margin-bottom: $margin !important;
+.mar-t-4 {
+  margin-top: $margin-100 !important;
 }
 
+.mar-t-8 {
+  margin-top: $margin-200 !important;
+}
+
+.mar-b,
 .mar-b-1 {
-  margin-bottom: $margin-1 !important;
+  margin-bottom: $margin-025 !important;
 }
 
 .mar-b-2 {
-  margin-bottom: $margin-2 !important;
+  margin-bottom: $margin-050 !important;
 }
 
 .mar-b-3 {
-  margin-bottom: $margin-3 !important;
+  margin-bottom: $margin-075 !important;
 }
 
-.mar-l {
-  margin-left: $margin !important;
+.mar-b-4 {
+  margin-bottom: $margin-100 !important;
 }
 
+.mar-b-8 {
+  margin-bottom: $margin-200 !important;
+}
+
+.mar-l,
 .mar-l-1 {
-  margin-left: $margin-1 !important;
+  margin-left: $margin-025 !important;
 }
 
 .mar-l-2 {
-  margin-left: $margin-2 !important;
+  margin-left: $margin-050 !important;
 }
 
 .mar-l-3 {
-  margin-left: $margin-3 !important;
+  margin-left: $margin-075 !important;
 }
 
-.mar-r {
-  margin-right: $margin !important;
+.mar-l-4 {
+  margin-left: $margin-100 !important;
 }
 
+.mar-l-8 {
+  margin-left: $margin-200 !important;
+}
+
+.mar-r,
 .mar-r-1 {
-  margin-right: $margin-1 !important;
+  margin-right: $margin-025 !important;
 }
 
 .mar-r-2 {
-  margin-right: $margin-2 !important;
+  margin-right: $margin-050 !important;
 }
 
 .mar-r-3 {
-  margin-right: $margin-3 !important;
+  margin-right: $margin-075 !important;
+}
+
+.mar-r-4 {
+  margin-right: $margin-100 !important;
+}
+
+.mar-r-8 {
+  margin-right: $margin-200 !important;
 }

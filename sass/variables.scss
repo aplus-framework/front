@@ -5,18 +5,20 @@ $font-family-mono: "DejaVu Sans Mono", Consolas, "Courier New", monospace;
 $font-size: 1rem;
 $line-height: 1.5;
 //
-$margin: $font-size * .25;
-$margin-1: $font-size * .5;
-$margin-2: $font-size * .75;
-$margin-3: $font-size;
+$margin-025: $font-size * .25;
+$margin-050: $font-size * .5;
+$margin-075: $font-size * .75;
+$margin-100: $font-size;
+$margin-200: $font-size * 2;
 //
-$padding: $font-size * .25;
-$padding-1: $font-size * .5;
-$padding-2: $font-size * .75;
-$padding-3: $font-size;
+$padding-025: $font-size * .25;
+$padding-050: $font-size * .5;
+$padding-075: $font-size * .75;
+$padding-100: $font-size;
+$padding-200: $font-size * 2;
 //
 $border-width: $font-size * 0.05;
-$border-bar-width: $padding-1;
+$border-bar-width: $padding-050;
 //
 $border-radius: $font-size * .25;
 //

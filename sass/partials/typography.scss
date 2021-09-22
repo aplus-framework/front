@@ -1,5 +1,5 @@
-$heading-margin: $margin-1 0 !default;
-$p-margin-top: $margin-3 !default;
+$heading-margin: $margin-050 0 !default;
+$p-margin-top: $margin-100 !default;
 $hr-margin: $p-margin-top 0 !default;
 /* Typography */
 h1 {
@@ -121,7 +121,7 @@ code {
 pre {
   width: auto;
   background-color: autoDarkenLighten($default, 10%);
-  padding: $padding-1 $padding-2;
+  padding: $padding-050 $padding-075;
   border: $border-width solid autoDarkenLighten($default, 30%);
   // border-left: .26rem solid autoDarkenLighten($primary, 5%);
   //word-wrap: break-word;
@@ -139,16 +139,16 @@ pre {
 :not(pre) > code {
   color: autoDarkenLighten(autoDarkenLighten($default, 10%), 80%);
   background-color: autoDarkenLighten($default, 10%);
-  padding-left: $padding;
-  padding-right: $padding;
+  padding-left: $padding-025;
+  padding-right: $padding-025;
   font-size: 110%;
   border-radius: .5rem;
 }
 
 mark {
   @include colors($warning);
-  padding-left: $padding;
-  padding-right: $padding;
+  padding-left: $padding-025;
+  padding-right: $padding-025;
 }
 
 hr {

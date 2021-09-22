@@ -21,19 +21,19 @@
 }
 
 .container {
-  padding: 0 $padding-3;
+  padding: 0 $padding-100;
 }
 
 .row-padding > *,
 .column-padding > *,
 .box-padding {
-  padding: $padding !important;
+  padding: $padding-025 !important;
 }
 
 .row-margin > *,
 .column-margin > *,
 .box-margin {
-  margin: $margin !important;
+  margin: $margin-025 !important;
 }
 
 .box,

@@ -6,7 +6,7 @@ $view->extends('example');
 $view->block('contents');
 ?>
 
-    <div class="container row pad-3" style="background: purple">
+    <div class="container row pad-4" style="background: purple">
         <div class="box">Logo</div>
         <div class="box">foo</div>
         <div class="box">foo 2</div>

@@ -1,5 +1,5 @@
 /* Forms */
-$input-padding: $padding-1 $padding-2 !default;
+$input-padding: $padding-050 $padding-075 !default;
 $input-border: $border-width solid autoDarkenLighten($default, 50%) !default;
 $input-border-radius: $border-radius !default;
 $input-box-shadow: inset 0 ($font-size * .2) ($font-size * .2) rgba(darkLight($default, 30%, 20%), .3) !default;
@@ -50,12 +50,12 @@ label {
 
 legend {
   border: $border-width solid autoDarkenLighten($default, 30%);
-  padding: $padding-1 $padding-2;
+  padding: $padding-050 $padding-075;
 }
 
 fieldset {
   border: $border-width solid autoDarkenLighten($default, 30%);
-  padding: $padding-1;
+  padding: $padding-050;
 
   &:not(:first-child) {
     margin-top: 1.05rem;

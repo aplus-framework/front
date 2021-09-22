@@ -6,7 +6,7 @@ $view->extends('example');
 $view->block('contents');
 ?>
     <h2>Navbar 1</h2>
-    <div class="row border align-items-center pad-1" id="navbar">
+    <div class="row border align-items-center pad-2" id="navbar">
         <div class="box">
             <a href="#">Home</a>
             <a href="#">Packages</a>
@@ -18,7 +18,7 @@ $view->block('contents');
         </div>
     </div>
     <h2>Navbar 2</h2>
-    <div class="row border align-items-center pad-1" id="navbar">
+    <div class="row border align-items-center pad-2" id="navbar">
         <div class="box">
             <a href="#" class="mar-l">Home</a>
             <a href="#" class="mar-l">Packages</a>
@@ -36,13 +36,13 @@ $view->block('contents');
             <a href="#" class="mar-l pad bottombar">Packages</a>
             <a href="#" class="mar-l pad bottombar">Contact</a>
         </div>
-        <div class="box text-right pad-1">
+        <div class="box text-right pad-2">
             <a href="#" class="btn">Login</a>
             <a href="#" class="btn primary">Register</a>
         </div>
     </div>
     <h2>Navbar 4</h2>
-    <div class="row border align-items-center pad-1" id="navbar-4">
+    <div class="row border align-items-center pad-2" id="navbar-4">
         <div class="box">
             <a href="#">Home</a>
             <a href="#">Packages</a>
@@ -54,7 +54,7 @@ $view->block('contents');
         </form>
     </div>
     <h2>Navbar 5</h2>
-    <div class="row border align-items-center pad-1" id="navbar-5">
+    <div class="row border align-items-center pad-2" id="navbar-5">
         <div class="box">
             <a href="#">Home</a>
             <a href="#">Packages</a>
@@ -69,12 +69,12 @@ $view->block('contents');
     <div class="row border align-items-center " id="navbar-6">
         <div class="box">
             <div class="row text-center links">
-                <a href="#" class="box pad-2 border-right bottombar-hover">Home</a>
-                <a href="#" class="box pad-2 border-right bottombar-hover">Packages</a>
-                <a href="#" class="box pad-2 border-right bottombar-hover">Contact</a>
+                <a href="#" class="box pad-3 border-right bottombar-hover">Home</a>
+                <a href="#" class="box pad-3 border-right bottombar-hover">Packages</a>
+                <a href="#" class="box pad-3 border-right bottombar-hover">Contact</a>
             </div>
         </div>
-        <form class="box-4 group pad-1">
+        <form class="box-4 group pad-2">
             <input type="text" name="q" placeholder="Search..." class="animate-input">
             <button class="primary">Go!</button>
         </form>
@@ -82,10 +82,10 @@ $view->block('contents');
     <h2>Navbar 7</h2>
     <div class="row">
         <div class="box-3 border">
-            <div class="column border-bottom pad-1" id="navbar-7">
+            <div class="column border-bottom pad-2" id="navbar-7">
                 <h3>Panel</h3>
             </div>
-            <div class="column pad-1" id="navbar-7">
+            <div class="column pad-2" id="navbar-7">
                 <a href="#">Home</a>
                 <a href="#">Packages</a>
                 <a href="#">Contact</a>
@@ -93,16 +93,16 @@ $view->block('contents');
                 <a href="#" class="btn primary margin-top">Register</a>
             </div>
         </div>
-        <div class="box-6 pad-1">
+        <div class="box-6 pad-2">
             <h1 style="margin-top: 0">Contents</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
         <div class="box-3 border">
-            <div class="column border-bottom pad-1" id="navbar-7">
+            <div class="column border-bottom pad-2" id="navbar-7">
                 <h3>Panel</h3>
             </div>
             <div class="column" id="navbar-7">
-                <div class="pad-1">
+                <div class="pad-2">
                     <input type="text" placeholder="Search...">
                 </div>
                 <ul class="list border-bottom border-top">
@@ -110,7 +110,7 @@ $view->block('contents');
                     <li class="list-item"><a href="#">Packages</a></li>
                     <li class="list-item"><a href="#">Contact</a></li>
                 </ul>
-                <div class="pad-1 column">
+                <div class="pad-2 column">
                     <a href="#" class="btn">Login</a>
                     <a href="#" class="btn primary margin-top">Register</a>
                 </div>
@@ -133,7 +133,7 @@ $view->block('contents');
             <button class="no-rad">Contact</button>
             <div class="dropdown">
                 <button class="border-0 no-rad">Dropdown Mega</button>
-                <div class="dropdown-content-mega border pad-2">
+                <div class="dropdown-content-mega border pad-3">
                     <h1>Mega</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
