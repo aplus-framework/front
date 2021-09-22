@@ -26,7 +26,7 @@ test:php:
 pages:
   stage: deploy
   dependencies:
-    - test:build
+    - test:php
   environment:
     name: production
     url: https://aplus-framework.gitlab.io
