@@ -1,29 +1,24 @@
 ---
 image: registry.gitlab.com/aplus-framework/images/builder
 
-cache:
-  paths:
-    - vendor/
-    - node_modules/
+include:
+  - template: Security/SAST.gitlab-ci.yml
 
-test:sass:
-  image: node:10.19
+variables:
+  SAST_EXCLUDED_PATHS: guide, tests, vendor
+
+test:php:
   stage: test
-  before_script:
-    - npm install -g sass
-  script:
-    - mkdir -p build/assets/css/
-    - sass --trace assets/css/main.scss:build/assets/css/main.css
-  artifacts:
+  cache:
     paths:
       - build/
-
-test:jekyll:
-  image: ruby:2.7
-  stage: test
+      - vendor/
+  before_script:
+    - composer install
   script:
-    - bundle install --path vendor
-    - bundle exec jekyll build -d build/
+    - composer normalize --dry-run --indent-size=4 --indent-style=space
+    - php sass-compiler.php
+    - php views-builder.php
   artifacts:
     paths:
       - build/
@@ -31,11 +26,12 @@ test:jekyll:
 pages:
   stage: deploy
   dependencies:
-    - test:sass
-    - test:jekyll
+    - test:build
+  environment:
+    name: production
+    url: https://aplus-framework.gitlab.io
   script:
-    - mkdir public/
-    - mv build/* public/
+    - mv build/ public/
   artifacts:
     paths:
       - public/
