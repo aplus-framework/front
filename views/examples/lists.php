@@ -10,48 +10,72 @@ $view->block('contents');
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
-        <ul>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-        </ul>
+        <li>Sublist:
+            <ul>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+            </ul>
+        </li>
         <li>abcd 123</li>
     </ul>
     <ul>
         <li>abcd 123</li>
         <li>abcd 123</li>
         <li>abcd 123</li>
-        <ul>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-        </ul>
+        <li>
+            <ul>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>
+                    <ul>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                    </ul>
+                </li>
+                <li>abcd 123</li>
+            </ul>
+        </li>
         <li>abcd 123</li>
     </ul>
     <hr>
     <ol>
         <li>abcd 123</li>
         <li>abcd 123</li>
-        <ol>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-        </ol>
+        <li>Sublist:
+            <ol>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+            </ol>
+        </li>
         <li>abcd 123</li>
         <li>abcd 123</li>
     </ol>
     <ol>
         <li>abcd 123</li>
         <li>abcd 123</li>
-        <ol>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-            <li>abcd 123</li>
-        </ol>
+        <li>
+            <ol>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>abcd 123</li>
+                <li>
+                    <ol>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                        <li>abcd 123</li>
+                    </ol>
+                </li>
+                <li>abcd 123</li>
+            </ol>
+        </li>
         <li>abcd 123</li>
         <li>abcd 123</li>
     </ol>

@@ -1,18 +1,30 @@
 $list-padding: 0 ($padding-100 * 1.25) !default;
 $list-ul-style: disc !default;
+$list-li-ul-style: circle !default;
 $list-ol-style: decimal !default;
+$list-li-ol-style: lower-alpha !default;
 $list-list-padding: $padding-050 $padding-100 !default;
 /* Lists */
 ul, ol {
   padding: $list-padding;
 }
 
-ul {
+ul,
+li ul li ul {
   list-style: $list-ul-style;
 }
 
-ol {
+ol,
+li ol li ol {
   list-style: $list-ol-style;
+}
+
+li > ul {
+  list-style: $list-li-ul-style;
+}
+
+li > ol {
+  list-style: $list-li-ol-style;
 }
 
 .list {
