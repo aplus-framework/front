@@ -20,7 +20,6 @@
     "require-dev": {
         "aplus/mvc": "dev-master",
         "ergebnis/composer-normalize": "^2.15",
-        "natanfelles/php-server": "^2.11",
         "scssphp/scssphp": "^1.8"
     },
     "config": {
