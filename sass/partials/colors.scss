@@ -15,12 +15,12 @@
     border-color: autoDarkenLighten($color, 30%);
   }
   .text-#{$name} {
-    color: $color;
+    color: $color !important;
   }
   a.text-#{$name}:hover {
-    color: pick-visible-color($default, darken($color, 10%), lighten($color, 10%));
+    color: pick-visible-color($default, darken($color, 10%), lighten($color, 10%)) !important;
   }
   .border-#{$name} {
-    border-color: $color;
+    border-color: $color !important;
   }
 }
