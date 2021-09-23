@@ -101,8 +101,13 @@ $view->block('contents');
     <div class="list hoverable border">
         <a href="#">abcd 123</a>
         <a href="#">abcd 123</a>
+        <a href="#" class="text-success">abcd 123</a>
         <a href="#">abcd 123</a>
         <a href="#">abcd 123</a>
+        <a href="#">abcd 123</a>
+        <a href="#" class="text-info">abcd 123</a>
+        <a href="#" class="text-error">abcd 123</a>
+        <a href="#" class="text-warning">abcd 123</a>
     </div>
 
     <hr>

@@ -17,6 +17,9 @@
   .text-#{$name} {
     color: $color;
   }
+  a.text-#{$name}:hover {
+    color: pick-visible-color($default, darken($color, 10%), lighten($color, 10%));
+  }
   .border-#{$name} {
     border-color: $color;
   }
