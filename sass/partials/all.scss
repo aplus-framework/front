@@ -1,30 +1,13 @@
 /* All */
-html {
-  box-sizing: border-box;
-}
-
-* {
-  box-sizing: inherit;
-
-  &:before,
-  &:after {
-    box-sizing: inherit;
-  }
-}
-
 // @import "normalize";
 @import "reset";
 html,
 body {
   font-family: $font-family-sans;
-  font-size: 1rem;
+  font-size: $font-size;
   color: autoDarkenLighten($default, 80%);
   line-height: 1.5;
   background-color: $default;
-}
-
-html {
-  overflow-x: hidden;
 }
 
 @import "typography";
