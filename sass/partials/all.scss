@@ -1,11 +1,12 @@
 /* All */
 // @import "normalize";
+$body-color: autoDarkenLighten($default, 80%) !default;
 html,
 body {
   font-family: $font-family-sans;
   font-size: $font-size;
-  color: autoDarkenLighten($default, 80%);
-  line-height: 1.5;
+  color: $body-color;
+  line-height: $line-height;
   background-color: $default;
 }
 
