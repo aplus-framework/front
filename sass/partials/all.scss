@@ -1,6 +1,5 @@
 /* All */
 // @import "normalize";
-@import "reset";
 html,
 body {
   font-family: $font-family-sans;
@@ -10,6 +9,7 @@ body {
   background-color: $default;
 }
 
+@import "reset";
 @import "typography";
 @import "tables";
 @import "buttons";
