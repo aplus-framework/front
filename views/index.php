@@ -25,6 +25,9 @@ $view->block('contents');
             <a href="examples/margins.html">margins</a>
         </li>
         <li>
+            <a href="examples/paddings.html">paddings</a>
+        </li>
+        <li>
             <a href="examples/tables.html">tables</a>
         </li>
         <li>
