@@ -19,7 +19,8 @@ textarea {
   transition: .3s;
   box-shadow: $input-box-shadow;
 
-  &:focus {
+  &:focus,
+  &.active {
     border-color: $primary;
     background-color: darkLight($default, 15%, 3%);
     outline: 0;
@@ -27,7 +28,8 @@ textarea {
   }
 
   @each $name, $color in $colors {
-    &:focus.border-#{$name} {
+    &:focus.border-#{$name},
+    &.active.border-#{$name} {
       box-shadow: 0 0 0 ($font-size * .2) rgba(darkLight($color, 30%, 20%), .3);
     }
   }

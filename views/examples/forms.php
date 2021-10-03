@@ -152,7 +152,7 @@ $view->block('contents');
                 </div>
                 <div class="col-6">
                     <label>Email</label>
-                    <input type="email" name="email" placeholder="Your email" class="border-success rad">
+                    <input type="email" name="email" placeholder="Your email" class="border-success active rad">
                     <span class="text-success">Email is available</span>
                 </div>
             </div>
