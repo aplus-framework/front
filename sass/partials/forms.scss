@@ -25,6 +25,12 @@ textarea {
     outline: 0;
     box-shadow: $input-box-shadow-focus;
   }
+
+  @each $name, $color in $colors {
+    &:focus.border-#{$name} {
+      box-shadow: 0 0 0 ($font-size * .2) rgba(darkLight($color, 30%, 20%), .3);
+    }
+  }
 }
 
 // select {
