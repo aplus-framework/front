@@ -14,6 +14,16 @@
     @include colorsHover($color);
     border-color: autoDarkenLighten($color, 30%);
   }
+  button.#{$name}:focus,
+  button.#{$name}:active,
+  button.#{$name}.active,
+  .btn.#{$name}:focus,
+  .btn.#{$name}:active,
+  .btn.#{$name}.active {
+    @include colorsHover(autoDarkenLighten($color, 2%));
+    border-color: autoDarkenLighten($color, 30%);
+    box-shadow: $button-box-shadow-focus;
+  }
   .text-#{$name} {
     color: $color !important;
   }
