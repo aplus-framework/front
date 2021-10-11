@@ -1,3 +1,5 @@
+<a href="https://gitlab.com/aplus-framework/libraries/front"><img src="https://gitlab.com/aplus-framework/libraries/front/-/raw/master/guide/image.png" alt="Aplus Framework Front Library" align="right" width="100"></a>
+
 # Aplus Framework Front Library
 
 - [User Guide](https://docs.aplus-framework.com/guides/libraries/front/index.html)
