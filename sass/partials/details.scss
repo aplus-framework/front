@@ -1,0 +1,24 @@
+$details-border: $border-width solid autoDarkenLighten($default, 30%) !default;
+$details-summary-background: autoDarkenLighten($default, 10%) !default;
+details {
+  border: $details-border;
+  border-radius: $border-radius;
+  padding: $padding-050 $padding-050 0;
+}
+
+summary {
+  background: $details-summary-background;
+  cursor: pointer;
+  font-weight: bold;
+  margin: -($margin-050) -($margin-050) 0;
+  padding: $padding-050;
+}
+
+details[open] {
+  padding: $padding-050;
+}
+
+details[open] summary {
+  border-bottom: $details-border;
+  margin-bottom: $margin-050;
+}
