@@ -6,6 +6,10 @@ details {
   padding: $padding-050 $padding-050 0;
 }
 
+details + details {
+  margin-top: $margin-050;
+}
+
 summary {
   background: $details-summary-background;
   cursor: pointer;

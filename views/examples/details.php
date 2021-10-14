@@ -28,7 +28,7 @@ $view->block('contents');
                 <summary>Mamamia</summary>
                 <div>Ok</div>
                 <div>Ok</div>
-                <details class="mar-b-2 primary">
+                <details class="primary">
                     <summary class="success">Summary</summary>
                     <div>Ok</div>
                     <div>Ok</div>
